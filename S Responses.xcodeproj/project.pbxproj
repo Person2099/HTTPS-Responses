@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,10 @@
 		3207F46326C494E500D90D50 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3207F46226C494E500D90D50 /* Preview Assets.xcassets */; };
 		3207F46E26C494E500D90D50 /* S_ResponsesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3207F46D26C494E500D90D50 /* S_ResponsesTests.swift */; };
 		3207F47926C494E500D90D50 /* S_ResponsesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3207F47826C494E500D90D50 /* S_ResponsesUITests.swift */; };
+		3207F48826C4957600D90D50 /* Variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3207F48726C4957600D90D50 /* Variables.swift */; };
+		3207F48A26C4A88A00D90D50 /* ResponseCodeDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3207F48926C4A88A00D90D50 /* ResponseCodeDetails.swift */; };
+		3207F48D26C4FB3A00D90D50 /* AlgoliaSearchClient in Frameworks */ = {isa = PBXBuildFile; productRef = 3207F48C26C4FB3A00D90D50 /* AlgoliaSearchClient */; };
+		3207F48F26C4FC9000D90D50 /* Algolia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3207F48E26C4FC9000D90D50 /* Algolia.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +49,9 @@
 		3207F47426C494E500D90D50 /* S ResponsesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "S ResponsesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3207F47826C494E500D90D50 /* S_ResponsesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S_ResponsesUITests.swift; sourceTree = "<group>"; };
 		3207F47A26C494E500D90D50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3207F48726C4957600D90D50 /* Variables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Variables.swift; sourceTree = "<group>"; };
+		3207F48926C4A88A00D90D50 /* ResponseCodeDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseCodeDetails.swift; sourceTree = "<group>"; };
+		3207F48E26C4FC9000D90D50 /* Algolia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Algolia.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3207F48D26C4FB3A00D90D50 /* AlgoliaSearchClient in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +107,7 @@
 				3207F45D26C494E300D90D50 /* ContentView.swift */,
 				3207F45F26C494E500D90D50 /* Assets.xcassets */,
 				3207F46426C494E500D90D50 /* Info.plist */,
+				3207F48626C4955E00D90D50 /* Helpers */,
 				3207F46126C494E500D90D50 /* Preview Content */,
 			);
 			path = "S Responses";
@@ -130,6 +139,16 @@
 			path = "S ResponsesUITests";
 			sourceTree = "<group>";
 		};
+		3207F48626C4955E00D90D50 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3207F48726C4957600D90D50 /* Variables.swift */,
+				3207F48E26C4FC9000D90D50 /* Algolia.swift */,
+				3207F48926C4A88A00D90D50 /* ResponseCodeDetails.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,6 +165,9 @@
 			dependencies = (
 			);
 			name = "S Responses";
+			packageProductDependencies = (
+				3207F48C26C4FB3A00D90D50 /* AlgoliaSearchClient */,
+			);
 			productName = "S Responses";
 			productReference = 3207F45826C494E300D90D50 /* S Responses.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +239,9 @@
 				Base,
 			);
 			mainGroup = 3207F44F26C494E300D90D50;
+			packageReferences = (
+				3207F48B26C4FB3A00D90D50 /* XCRemoteSwiftPackageReference "algoliasearch-client-swift" */,
+			);
 			productRefGroup = 3207F45926C494E300D90D50 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -259,7 +284,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3207F48A26C4A88A00D90D50 /* ResponseCodeDetails.swift in Sources */,
+				3207F48826C4957600D90D50 /* Variables.swift in Sources */,
 				3207F45E26C494E300D90D50 /* ContentView.swift in Sources */,
+				3207F48F26C4FC9000D90D50 /* Algolia.swift in Sources */,
 				3207F45C26C494E300D90D50 /* S_ResponsesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,7 +455,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sebhunterluke.S-Responses";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sebhunterluke.HTTPS-Responses";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -449,7 +477,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sebhunterluke.S-Responses";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sebhunterluke.HTTPS-Responses";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -580,6 +608,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3207F48B26C4FB3A00D90D50 /* XCRemoteSwiftPackageReference "algoliasearch-client-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/algolia/algoliasearch-client-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.10.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3207F48C26C4FB3A00D90D50 /* AlgoliaSearchClient */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3207F48B26C4FB3A00D90D50 /* XCRemoteSwiftPackageReference "algoliasearch-client-swift" */;
+			productName = AlgoliaSearchClient;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3207F45026C494E300D90D50 /* Project object */;
 }
