@@ -2,6 +2,15 @@
   "object": {
     "pins": [
       {
+        "package": "OneSignalXCFramework",
+        "repositoryURL": "https://github.com/OneSignal/OneSignal-XCFramework",
+        "state": {
+          "branch": null,
+          "revision": "2627e9eac584eb021bf86cd06661c187c6496a71",
+          "version": "3.6.1"
+        }
+      },
+      {
         "package": "SwiftUIX",
         "repositoryURL": "https://github.com/SwiftUIX/SwiftUIX.git",
         "state": {

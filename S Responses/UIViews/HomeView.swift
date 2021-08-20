@@ -13,6 +13,7 @@ struct HomeView: View {
     var body: some View {
         NavigationView {
             VStack {
+                Spacer()
                 Text("HTTP/S Response Code Lookup")
                     .font(.largeTitle)
                     .bold()
@@ -38,7 +39,6 @@ struct HomeView: View {
                         }
                     }
                 }
-                
                 Spacer()
                 
             }

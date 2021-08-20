@@ -57,14 +57,34 @@ struct SettingsView: View {
                 }
                 
                 Section {
-                    Link("Report an Issue", destination: URL(string: "https://httpsresponselookup.onuniverse.com")!)
-                        .foregroundColor(.red)
-                        .font(.headline)
+                    HStack {
+                        Image(systemName: "exclamationmark.triangle")
+                            .foregroundColor(.red)
+                            .font(.headline)
+                        Link("Report an Issue", destination: URL(string: "https://httpsresponselookup.onuniverse.com")!)
+                            .foregroundColor(.red)
+                            .font(.headline)
+                    }
                 }
                 
                 Section(header: Text("About")) {
-                    Label("Version: \(UIApplication.appVersion!)", systemImage: "questionmark.circle")
-                        .foregroundColor(.label)
+                    HStack {
+                        Image(systemName: "questionmark.circle")
+                        Text("Version: \(UIApplication.appVersion!)")
+                            .foregroundColor(.label)
+                    }
+                    
+                    HStack {
+                        Image(systemName: "hand.raised")
+                        Link("Privacy Policy", destination: URL(string: "https://httpsresponselookup.onuniverse.com/privacy-policy")!)
+                            .foregroundColor(.label)
+                    }
+                    HStack {
+                        Image(systemName: "star.leadinghalf.fill")
+                        Link("Rate Our App", destination: URL(string: "https://httpsresponselookup.onuniverse.com/privacy-policy")!)
+                            .foregroundColor(.label)
+                    }
+                    
                 }
                 
             }
