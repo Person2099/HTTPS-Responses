@@ -403,59 +403,59 @@ class ResponseCodes {
     
     //MARK: 2** Response Codes
     let res200 = responseDec(responseCode: 200,
-                             responseCodeTitle: "Placeholder",
+                             responseCodeTitle: "Ok",
                              simplifiedDef: "An unexpected error has occured, please restart the application.",
                              responseCodeType: "Success",
                              detailedDef: "If this issue persists please contact the development team.")
     let res201 = responseDec(responseCode: 201,
-                             responseCodeTitle: "Placeholder",
+                             responseCodeTitle: "Created",
                              simplifiedDef: "An unexpected error has occured, please restart the application.",
                              responseCodeType: "Success",
                              detailedDef: "If this issue persists please contact the development team.")
     let res202 = responseDec(responseCode: 202,
-                             responseCodeTitle: "Placeholder",
+                             responseCodeTitle: "Accepted",
                              simplifiedDef: "An unexpected error has occured, please restart the application.",
                              responseCodeType: "Success",
                              detailedDef: "If this issue persists please contact the development team.")
     let res203 = responseDec(responseCode: 203,
-                             responseCodeTitle: "Placeholder",
+                             responseCodeTitle: "Non-Authoritative Information",
                              simplifiedDef: "An unexpected error has occured, please restart the application.",
                              responseCodeType: "Success",
                              detailedDef: "If this issue persists please contact the development team.")
     let res204 = responseDec(responseCode: 204,
-                             responseCodeTitle: "Placeholder",
+                             responseCodeTitle: "No Content",
                              simplifiedDef: "An unexpected error has occured, please restart the application.",
                              responseCodeType: "Success",
                              detailedDef: "If this issue persists please contact the development team.")
     let res205 = responseDec(responseCode: 205,
-                             responseCodeTitle: "Placeholder",
+                             responseCodeTitle: "Reset Content",
                              simplifiedDef: "An unexpected error has occured, please restart the application.",
                              responseCodeType: "Success",
                              detailedDef: "If this issue persists please contact the development team.")
     let res206 = responseDec(responseCode: 206,
-                             responseCodeTitle: "Placeholder",
+                             responseCodeTitle: "Partial Content",
                              simplifiedDef: "An unexpected error has occured, please restart the application.",
                              responseCodeType: "Success",
                              detailedDef: "If this issue persists please contact the development team.")
     let res207 = responseDec(responseCode: 207,
-                             responseCodeTitle: "Placeholder",
+                             responseCodeTitle: "Multi-Status (WebDAV)",
                              simplifiedDef: "An unexpected error has occured, please restart the application.",
                              responseCodeType: "Success",
                              detailedDef: "If this issue persists please contact the development team.")
     let res208 = responseDec(responseCode: 208,
-                             responseCodeTitle: "Placeholder",
+                             responseCodeTitle: "Already Reported (WebDAV)",
                              simplifiedDef: "An unexpected error has occured, please restart the application.",
                              responseCodeType: "Success",
                              detailedDef: "If this issue persists please contact the development team.")
     let res226 = responseDec(responseCode: 226,
-                             responseCodeTitle: "Placeholder",
+                             responseCodeTitle: "226 IM Used",
                              simplifiedDef: "An unexpected error has occured, please restart the application.",
                              responseCodeType: "Success",
                              detailedDef: "If this issue persists please contact the development team.")
     
     //MARK: 3** Response Codes
     let res300 = responseDec(responseCode: 300,
-                             responseCodeTitle: "Placeholder",
+                             responseCodeTitle: "Multiple Choices",
                              simplifiedDef: "An unexpected error has occured, please restart the application.",
                              responseCodeType: "Redirection",
                              detailedDef: "If this issue persists please contact the development team.")
