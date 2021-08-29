@@ -417,7 +417,7 @@ class ResponseCodes {
 							 responseCodeType: "Success",
 							 detailedDef: "If this issue persists please contact the development team.")
 	let res203 = responseDec(responseCode: 203,
-							 responseCodeTitle: "Non-Authoritative\nInformation",
+							 responseCodeTitle: "Non-Authoritative Information",
 							 simplifiedDef: "An unexpected error has occured, please restart the application.",
 							 responseCodeType: "Success",
 							 detailedDef: "If this issue persists please contact the development team.")
