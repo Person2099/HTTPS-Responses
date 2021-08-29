@@ -737,6 +737,4 @@ class ResponseCodes {
 							 simplifiedDef: "An unexpected error has occured, please restart the application.",
 							 responseCodeType: "Server Error",
 							 detailedDef: "If this issue persists please contact the development team.")
-	
-	
 }
