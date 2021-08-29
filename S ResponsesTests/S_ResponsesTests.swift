@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import HTTP_S_Responses
+//@testable import HTTP_S_Responses
 
 class S_ResponsesTests: XCTestCase {
 

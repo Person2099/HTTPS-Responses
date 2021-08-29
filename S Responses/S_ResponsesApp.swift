@@ -10,10 +10,11 @@ import SwiftUI
 @main
 struct S_ResponsesApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+	@StateObject var viewRouter = ViewRouter()
     
     var body: some Scene {
         WindowGroup {
-            HomeView()
+			MotherView().environmentObject(viewRouter)
         }
     }
 }

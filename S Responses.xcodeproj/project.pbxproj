@@ -15,16 +15,21 @@
 		3207F47926C494E500D90D50 /* S_ResponsesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3207F47826C494E500D90D50 /* S_ResponsesUITests.swift */; };
 		3207F48826C4957600D90D50 /* Variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3207F48726C4957600D90D50 /* Variables.swift */; };
 		3207F48A26C4A88A00D90D50 /* ResponseCodeDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3207F48926C4A88A00D90D50 /* ResponseCodeDetails.swift */; };
-		3243B69A26C5DB910084E1B6 /* RCDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3243B69926C5DB910084E1B6 /* RCDetailView.swift */; };
-		3243B69C26C5DBCA0084E1B6 /* RCListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3243B69B26C5DBCA0084E1B6 /* RCListView.swift */; };
+		3243B69A26C5DB910084E1B6 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3243B69926C5DB910084E1B6 /* DetailView.swift */; };
+		3243B69C26C5DBCA0084E1B6 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3243B69B26C5DBCA0084E1B6 /* ListView.swift */; };
 		324E1F1826CB8C9700EB9E07 /* SwiftUIX in Frameworks */ = {isa = PBXBuildFile; productRef = 324E1F1726CB8C9700EB9E07 /* SwiftUIX */; };
 		324E1F1D26CB991200EB9E07 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324E1F1C26CB991100EB9E07 /* HomeView.swift */; };
 		324E1F1F26CB9B5F00EB9E07 /* bahnschrift.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 324E1F1E26CB9B5E00EB9E07 /* bahnschrift.ttf */; };
+		325815C426D3A54D007FE10F /* ExperimentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325815C326D3A54D007FE10F /* ExperimentView.swift */; };
+		325F4FC126D36664002877AA /* OneSignal in Frameworks */ = {isa = PBXBuildFile; productRef = 325F4FC026D36664002877AA /* OneSignal */; };
+		325F4FC626D391EF002877AA /* SwiftUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = 325F4FC526D391EF002877AA /* SwiftUIKit */; };
+		3275173F26D897240034EEE2 /* GlossaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3275173E26D897240034EEE2 /* GlossaryView.swift */; };
 		329CC19926CF71B40056CE4D /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329CC19826CF71B40056CE4D /* NotificationService.swift */; };
 		329CC19D26CF71B40056CE4D /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 329CC19626CF71B40056CE4D /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		329CC1A426CF725F0056CE4D /* OneSignal in Frameworks */ = {isa = PBXBuildFile; productRef = 329CC1A326CF725F0056CE4D /* OneSignal */; };
-		329CC1A626CF72790056CE4D /* OneSignal in Frameworks */ = {isa = PBXBuildFile; productRef = 329CC1A526CF72790056CE4D /* OneSignal */; };
 		329CC1A826CF73530056CE4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329CC1A726CF73530056CE4D /* AppDelegate.swift */; };
+		32B534F126D4DB7A009B4FFF /* NavigationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B534F026D4DB7A009B4FFF /* NavigationHelper.swift */; };
+		32B534F326D4DBDA009B4FFF /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B534F226D4DBDA009B4FFF /* ViewRouter.swift */; };
+		32B534F526D4DC08009B4FFF /* MotherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B534F426D4DC08009B4FFF /* MotherView.swift */; };
 		32E2ED5B26CE660C0005BD57 /* DarkModeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E2ED5A26CE660C0005BD57 /* DarkModeHelper.swift */; };
 /* End PBXBuildFile section */
 
@@ -81,16 +86,21 @@
 		3207F47A26C494E500D90D50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3207F48726C4957600D90D50 /* Variables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Variables.swift; sourceTree = "<group>"; };
 		3207F48926C4A88A00D90D50 /* ResponseCodeDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseCodeDetails.swift; sourceTree = "<group>"; };
-		3243B69926C5DB910084E1B6 /* RCDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCDetailView.swift; sourceTree = "<group>"; };
-		3243B69B26C5DBCA0084E1B6 /* RCListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCListView.swift; sourceTree = "<group>"; };
+		3243B69926C5DB910084E1B6 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		3243B69B26C5DBCA0084E1B6 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		324E1F1C26CB991100EB9E07 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		324E1F1E26CB9B5E00EB9E07 /* bahnschrift.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = bahnschrift.ttf; sourceTree = "<group>"; };
+		325815C326D3A54D007FE10F /* ExperimentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperimentView.swift; sourceTree = "<group>"; };
+		3275173E26D897240034EEE2 /* GlossaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlossaryView.swift; sourceTree = "<group>"; };
 		329CC19126CF6DF20056CE4D /* S Responses.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "S Responses.entitlements"; sourceTree = "<group>"; };
 		329CC19626CF71B40056CE4D /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		329CC19826CF71B40056CE4D /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		329CC19A26CF71B40056CE4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		329CC1A726CF73530056CE4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		329CC1A926CF74B60056CE4D /* OneSignalNotificationServiceExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OneSignalNotificationServiceExtension.entitlements; sourceTree = "<group>"; };
+		32B534F026D4DB7A009B4FFF /* NavigationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationHelper.swift; sourceTree = "<group>"; };
+		32B534F226D4DBDA009B4FFF /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
+		32B534F426D4DC08009B4FFF /* MotherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotherView.swift; sourceTree = "<group>"; };
 		32E2ED5A26CE660C0005BD57 /* DarkModeHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkModeHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,7 +110,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				324E1F1826CB8C9700EB9E07 /* SwiftUIX in Frameworks */,
-				329CC1A426CF725F0056CE4D /* OneSignal in Frameworks */,
+				325F4FC626D391EF002877AA /* SwiftUIKit in Frameworks */,
+				325F4FC126D36664002877AA /* OneSignal in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,7 +133,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				329CC1A626CF72790056CE4D /* OneSignal in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +210,8 @@
 				32E2ED5A26CE660C0005BD57 /* DarkModeHelper.swift */,
 				3207F48926C4A88A00D90D50 /* ResponseCodeDetails.swift */,
 				329CC1A726CF73530056CE4D /* AppDelegate.swift */,
+				32B534F026D4DB7A009B4FFF /* NavigationHelper.swift */,
+				32B534F226D4DBDA009B4FFF /* ViewRouter.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -207,10 +219,13 @@
 		3243B69D26C5DC990084E1B6 /* UIViews */ = {
 			isa = PBXGroup;
 			children = (
-				3207F45D26C494E300D90D50 /* SettingsView.swift */,
-				3243B69926C5DB910084E1B6 /* RCDetailView.swift */,
-				3243B69B26C5DBCA0084E1B6 /* RCListView.swift */,
+				32B534F426D4DC08009B4FFF /* MotherView.swift */,
 				324E1F1C26CB991100EB9E07 /* HomeView.swift */,
+				3243B69926C5DB910084E1B6 /* DetailView.swift */,
+				3207F45D26C494E300D90D50 /* SettingsView.swift */,
+				3243B69B26C5DBCA0084E1B6 /* ListView.swift */,
+				3275173E26D897240034EEE2 /* GlossaryView.swift */,
+				325815C326D3A54D007FE10F /* ExperimentView.swift */,
 			);
 			path = UIViews;
 			sourceTree = "<group>";
@@ -260,7 +275,8 @@
 			name = "S Responses";
 			packageProductDependencies = (
 				324E1F1726CB8C9700EB9E07 /* SwiftUIX */,
-				329CC1A326CF725F0056CE4D /* OneSignal */,
+				325F4FC026D36664002877AA /* OneSignal */,
+				325F4FC526D391EF002877AA /* SwiftUIKit */,
 			);
 			productName = "S Responses";
 			productReference = 3207F45826C494E300D90D50 /* S Responses.app */;
@@ -316,7 +332,6 @@
 			);
 			name = OneSignalNotificationServiceExtension;
 			packageProductDependencies = (
-				329CC1A526CF72790056CE4D /* OneSignal */,
 			);
 			productName = OneSignalNotificationServiceExtension;
 			productReference = 329CC19626CF71B40056CE4D /* OneSignalNotificationServiceExtension.appex */;
@@ -359,6 +374,7 @@
 			packageReferences = (
 				324E1F1626CB8C9700EB9E07 /* XCRemoteSwiftPackageReference "SwiftUIX" */,
 				329CC1A226CF725F0056CE4D /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */,
+				325F4FC426D391EF002877AA /* XCRemoteSwiftPackageReference "SwiftUIKit" */,
 			);
 			productRefGroup = 3207F45926C494E300D90D50 /* Products */;
 			projectDirPath = "";
@@ -413,12 +429,17 @@
 			files = (
 				3207F48A26C4A88A00D90D50 /* ResponseCodeDetails.swift in Sources */,
 				3207F48826C4957600D90D50 /* Variables.swift in Sources */,
-				3243B69A26C5DB910084E1B6 /* RCDetailView.swift in Sources */,
+				3243B69A26C5DB910084E1B6 /* DetailView.swift in Sources */,
+				32B534F326D4DBDA009B4FFF /* ViewRouter.swift in Sources */,
+				32B534F526D4DC08009B4FFF /* MotherView.swift in Sources */,
 				329CC1A826CF73530056CE4D /* AppDelegate.swift in Sources */,
+				325815C426D3A54D007FE10F /* ExperimentView.swift in Sources */,
 				3207F45E26C494E300D90D50 /* SettingsView.swift in Sources */,
-				3243B69C26C5DBCA0084E1B6 /* RCListView.swift in Sources */,
+				3243B69C26C5DBCA0084E1B6 /* ListView.swift in Sources */,
+				32B534F126D4DB7A009B4FFF /* NavigationHelper.swift in Sources */,
 				324E1F1D26CB991200EB9E07 /* HomeView.swift in Sources */,
 				32E2ED5B26CE660C0005BD57 /* DarkModeHelper.swift in Sources */,
+				3275173F26D897240034EEE2 /* GlossaryView.swift in Sources */,
 				3207F45C26C494E300D90D50 /* S_ResponsesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -592,7 +613,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "S Responses/S Responses.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"S Responses/Preview Content\"";
 				DEVELOPMENT_TEAM = 98JA788VTC;
 				ENABLE_PREVIEWS = YES;
@@ -617,7 +638,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "S Responses/S Responses.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"S Responses/Preview Content\"";
 				DEVELOPMENT_TEAM = 98JA788VTC;
 				ENABLE_PREVIEWS = YES;
@@ -723,6 +744,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 98JA788VTC;
 				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -744,6 +766,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 98JA788VTC;
 				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -819,6 +842,14 @@
 				minimumVersion = 0.0.8;
 			};
 		};
+		325F4FC426D391EF002877AA /* XCRemoteSwiftPackageReference "SwiftUIKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielsaidi/SwiftUIKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.7.2;
+			};
+		};
 		329CC1A226CF725F0056CE4D /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/OneSignal/OneSignal-XCFramework";
@@ -835,15 +866,15 @@
 			package = 324E1F1626CB8C9700EB9E07 /* XCRemoteSwiftPackageReference "SwiftUIX" */;
 			productName = SwiftUIX;
 		};
-		329CC1A326CF725F0056CE4D /* OneSignal */ = {
+		325F4FC026D36664002877AA /* OneSignal */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 329CC1A226CF725F0056CE4D /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */;
 			productName = OneSignal;
 		};
-		329CC1A526CF72790056CE4D /* OneSignal */ = {
+		325F4FC526D391EF002877AA /* SwiftUIKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 329CC1A226CF725F0056CE4D /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */;
-			productName = OneSignal;
+			package = 325F4FC426D391EF002877AA /* XCRemoteSwiftPackageReference "SwiftUIKit" */;
+			productName = SwiftUIKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
