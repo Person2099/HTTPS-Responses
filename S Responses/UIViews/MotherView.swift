@@ -27,6 +27,9 @@ struct MotherView: View {
 		case .glossary:
 			GlossaryView()
 				.transition(.leadCrossDissolve)
+		case .loading:
+			LoadingView()
+				.transition(.opacity)
 		}
 	}
 }

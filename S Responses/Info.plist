@@ -20,8 +20,12 @@
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>We require your location to...</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>bahnschrift.ttf</string>
@@ -38,7 +42,14 @@
 		<string>remote-notification</string>
 	</array>
 	<key>UILaunchScreen</key>
-	<dict/>
+	<dict>
+		<key>UIColorName</key>
+		<string>backgroundColour</string>
+		<key>UIImageName</key>
+		<string>launchImage</string>
+		<key>UIImageRespectsSafeAreaInsets</key>
+		<true/>
+	</dict>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

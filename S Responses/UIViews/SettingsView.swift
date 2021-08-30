@@ -10,17 +10,17 @@ import SwiftUIKit
 
 struct SettingsView: View {
 	@EnvironmentObject var viewRouter: ViewRouter
-	@StateObject public var sheetContext = SheetContext()
+	@StateObject private var sheetContext = SheetContext()
     
     /*init() {
 	UITableView.appearance().backgroundColor = UIColor(red: 85/255, green: 125/255, blue: 139/255, alpha: 1)
 	}*/
 	
 	@State public var informationalColor = Color(.white)
-	@State var successColor = Color(.green)
-	@State var redirectColor = Color(.blue)
-	@State var clientErrorColor = Color(.red)
-	@State var serverErrorColor = Color(.yellow)
+	@State public var successColor = Color(UIColor(red: 88/255, green: 176/255, blue: 0/255, alpha: 1))
+	@State public var redirectColor = Color(UIColor(red: 114/255, green: 221/255, blue: 247/255, alpha: 1))
+	@State public var clientErrorColor = Color(UIColor(red: 255/255, green: 51/255, blue: 51/255, alpha: 1))
+	@State public var serverErrorColor = Color(UIColor(red: 255/255, green: 255/255, blue: 51/255, alpha: 1))
 	@State var darkModeOption = false
 	@State var darkModeUseSystemSettingsOption = true
 	
@@ -65,10 +65,10 @@ struct SettingsView: View {
 						
 						Button(action: {
 							informationalColor = Color(.white)
-							successColor = Color(.green)
-							redirectColor = Color(.blue)
-							clientErrorColor = Color(.red)
-							serverErrorColor = Color(.yellow)
+							successColor = Color(UIColor(red: 88/255, green: 176/255, blue: 0/255, alpha: 1))
+							redirectColor = Color(UIColor(red: 114/255, green: 221/255, blue: 247/255, alpha: 1))
+							clientErrorColor = Color(UIColor(red: 255/255, green: 51/255, blue: 51/255, alpha: 1))
+							serverErrorColor = Color(UIColor(red: 255/255, green: 255/255, blue: 51/255, alpha: 1))
 						}, label: {
 							Text("Default Background Colours")
 								.font(.headline)
@@ -126,19 +126,19 @@ extension UIApplication {
 
 extension SettingsView {
 	
-	func webReportIssue() {
+	private func webReportIssue() {
 		visit(url: URL(string: "https://httpsresponselookup.onuniverse.com"))
 	}
 	
-	func webPrivacyPolicy() {
+	private func webPrivacyPolicy() {
 		visit(url: URL(string: "https://httpsresponselookup.onuniverse.com/privacy-policy"))
 	}
 	
-	func webRateUs() {
+	private func webRateUs() {
 		visit(url: URL(string: "https://httpsresponselookup.onuniverse.com"))
 	}
 	
-	func visit(url: URL?) {
+	private func visit(url: URL?) {
 		guard let url = url else { return }
 		sheetContext.present(WebView(url: url))
 	}

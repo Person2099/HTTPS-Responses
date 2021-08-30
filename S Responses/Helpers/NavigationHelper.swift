@@ -13,4 +13,5 @@ enum Page {
 	case list
 	case detail
 	case glossary
+	case loading
 }

@@ -15,6 +15,7 @@
 		3207F47926C494E500D90D50 /* S_ResponsesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3207F47826C494E500D90D50 /* S_ResponsesUITests.swift */; };
 		3207F48826C4957600D90D50 /* Variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3207F48726C4957600D90D50 /* Variables.swift */; };
 		3207F48A26C4A88A00D90D50 /* ResponseCodeDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3207F48926C4A88A00D90D50 /* ResponseCodeDetails.swift */; };
+		320B332F26DC48940035CFE8 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320B332E26DC48940035CFE8 /* LoadingView.swift */; };
 		3243B69A26C5DB910084E1B6 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3243B69926C5DB910084E1B6 /* DetailView.swift */; };
 		3243B69C26C5DBCA0084E1B6 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3243B69B26C5DBCA0084E1B6 /* ListView.swift */; };
 		324E1F1826CB8C9700EB9E07 /* SwiftUIX in Frameworks */ = {isa = PBXBuildFile; productRef = 324E1F1726CB8C9700EB9E07 /* SwiftUIX */; };
@@ -86,6 +87,7 @@
 		3207F47A26C494E500D90D50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3207F48726C4957600D90D50 /* Variables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Variables.swift; sourceTree = "<group>"; };
 		3207F48926C4A88A00D90D50 /* ResponseCodeDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseCodeDetails.swift; sourceTree = "<group>"; };
+		320B332E26DC48940035CFE8 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		3243B69926C5DB910084E1B6 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		3243B69B26C5DBCA0084E1B6 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		324E1F1C26CB991100EB9E07 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -223,6 +225,7 @@
 				324E1F1C26CB991100EB9E07 /* HomeView.swift */,
 				3243B69926C5DB910084E1B6 /* DetailView.swift */,
 				3207F45D26C494E300D90D50 /* SettingsView.swift */,
+				320B332E26DC48940035CFE8 /* LoadingView.swift */,
 				3243B69B26C5DBCA0084E1B6 /* ListView.swift */,
 				3275173E26D897240034EEE2 /* GlossaryView.swift */,
 				325815C326D3A54D007FE10F /* ExperimentView.swift */,
@@ -435,6 +438,7 @@
 				329CC1A826CF73530056CE4D /* AppDelegate.swift in Sources */,
 				325815C426D3A54D007FE10F /* ExperimentView.swift in Sources */,
 				3207F45E26C494E300D90D50 /* SettingsView.swift in Sources */,
+				320B332F26DC48940035CFE8 /* LoadingView.swift in Sources */,
 				3243B69C26C5DBCA0084E1B6 /* ListView.swift in Sources */,
 				32B534F126D4DB7A009B4FFF /* NavigationHelper.swift in Sources */,
 				324E1F1D26CB991200EB9E07 /* HomeView.swift in Sources */,
@@ -613,7 +617,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "S Responses/S Responses.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"S Responses/Preview Content\"";
 				DEVELOPMENT_TEAM = 98JA788VTC;
 				ENABLE_PREVIEWS = YES;
@@ -626,7 +630,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sebhunterluke.HTTPS-Responses";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -638,7 +642,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "S Responses/S Responses.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"S Responses/Preview Content\"";
 				DEVELOPMENT_TEAM = 98JA788VTC;
 				ENABLE_PREVIEWS = YES;
@@ -651,7 +655,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sebhunterluke.HTTPS-Responses";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -744,7 +748,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 98JA788VTC;
 				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -766,7 +770,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 98JA788VTC;
 				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;

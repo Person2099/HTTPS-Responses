@@ -9,6 +9,7 @@ import SwiftUI
 import SwiftUIKit
 
 struct HomeView: View {
+	@State private var isLoading = false
 	@EnvironmentObject var viewRouter: ViewRouter
 	@State private var search: String = ""
 	@StateObject private var context = AlertContext()
@@ -17,9 +18,12 @@ struct HomeView: View {
 	@State private var alertBody = ""
 	@State var item = 000
 	
+	let mainViewDispatchQueue = DispatchQueue(label: "mainViewDispatchQueue")
+	//UIColor(red: 216/255, green: 212/255, blue: 212/255, alpha: 1)
+	
     var body: some View {
 		ZStack {
-			LinearGradient(gradient: Gradient(colors: [Color(UIColor(red: 216/255, green: 212/255, blue: 212/255, alpha: 1)), Color(.blue)]), startPoint: .topLeading, endPoint: .bottomTrailing)
+			LinearGradient(gradient: Gradient(colors: [Color(UIColor(red: 216/255, green: 212/255, blue: 212/255, alpha: 1)), Color(.systemBlue)]), startPoint: .topLeading, endPoint: .bottomTrailing)
 				.ignoresSafeArea()
 			VStack {
 				Text("HTTP/S Response Code Lookup")
@@ -67,7 +71,7 @@ struct HomeView: View {
 						
 						Button(action: {
 							withAnimation {
-								viewRouter.currentPage = .settings
+								viewRouter.currentPage = .glossary
 							}
 						}) {
 							HStack {
@@ -102,6 +106,7 @@ extension HomeView {
 	func validate(submitted: String) {
 		if submitted.count == 0 {
 			//No entry: Handle error
+			isLoading.toggle()
 			return
 		}
 		
@@ -128,7 +133,7 @@ extension HomeView {
 		
 		forwardID(id: searchInt)
 		withAnimation() {
-			viewRouter.currentPage = .detail
+			viewRouter.currentPage = .loading
 		}
 	}
 	

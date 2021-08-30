@@ -5,26 +5,31 @@
 //  Created by Sebastian Keet on 12/8/21.
 //
 
+//MARK: Import Dependencies
 import Foundation
 import UIKit
 import SwiftUI
 
+//MARK: Define Response Declaration (responseDec) and responseType Structures
 struct responseDec: Hashable, Identifiable {
     let responseCode: Int
     let responseCodeTitle: String
     let simplifiedDef: String
     let responseCodeType: String
     let detailedDef: String
+	
+	// Generate Unique ID to conform to Identifiable
     let id = UUID()
 }
-
 struct responseType: Identifiable {
     let name: String
     let responses: [responseDec]
+	
+	// Generate Unique ID to conform to Identifiable
     let id = UUID()
 }
 
-//MARK: Variables Class Declaration
+//MARK: Variables Class Declaration (Used to store random variables)
 class Variables {
     let RCList: [Int] = [100, 101, 102, 200, 201, 202, 203, 204, 205, 206, 207, 208, 226, 300, 301, 302, 303, 304, 305, 306, 307, 308, 400, 401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415, 416, 417, 418, 420, 422, 423, 424, 425, 426, 428, 429, 431, 444, 449, 450, 451, 499, 500, 501, 502, 503, 504, 505, 506, 507, 508, 509, 510, 511, 598, 599]
     

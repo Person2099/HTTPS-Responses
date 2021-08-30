@@ -72,7 +72,7 @@ struct DetailView: View {
 					.frame(width: UIScreen.main.bounds.width)
 				}
 			}
-		}
+		}.preferredColorScheme(.light)
 	}
 }
 
@@ -87,19 +87,19 @@ extension DetailView {
 	
 	func Background() -> UIColor {
 		if Variables().RCRelation[current]!.responseCodeType == "Informational" {
-			return .white
+			return UIColor(SettingsView().informationalColor)
 		} else if Variables().RCRelation[current]!.responseCodeType == "Success" {
 			// Green
-			return UIColor(red: 88/255, green: 176/255, blue: 0/255, alpha: 1)
+			return UIColor(SettingsView().successColor)
 		} else if Variables().RCRelation[current]!.responseCodeType == "Redirection" {
 			// Blue
-			return UIColor(red: 114/255, green: 221/255, blue: 247/255, alpha: 1)
+			return UIColor(SettingsView().redirectColor)
 		} else if Variables().RCRelation[current]!.responseCodeType == "Client Error" {
 			// Red
-			return UIColor(red: 255/255, green: 51/255, blue: 51/255, alpha: 1)
+			return UIColor(SettingsView().clientErrorColor)
 		} else if Variables().RCRelation[current]!.responseCodeType == "Server Error" {
 			// Yellow
-			return UIColor(red: 255/255, green: 255/255, blue: 51/255, alpha: 1)
+			return UIColor(SettingsView().serverErrorColor)
 		} else {
 			return .gray
 		}

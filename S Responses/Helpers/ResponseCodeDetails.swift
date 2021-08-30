@@ -456,10 +456,10 @@ class ResponseCodes {
 	let res300 = responseDec(responseCode: 300,
 							 responseCodeTitle: "Multiple Choices",
 							 simplifiedDef: "An unexpected error has occured, please restart the application.",
-							 responseCodeType: "Moved Permanently",
+							 responseCodeType: "Redirection",
 							 detailedDef: "If this issue persists please contact the development team.")
 	let res301 = responseDec(responseCode: 301,
-							 responseCodeTitle: "Found",
+							 responseCodeTitle: "Moved Permanently",
 							 simplifiedDef: "An unexpected error has occured, please restart the application.",
 							 responseCodeType: "Redirection",
 							 detailedDef: "If this issue persists please contact the development team.")
