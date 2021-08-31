@@ -1,4 +1,6 @@
 # HTTPS-Responses
+Find our website here: https://httpsresponselookup.onuniverse.com/
+The website was created using Universe (https://www.onuniverse.com) and fulfills the neccesary requirements for beta testing via TestFlight, namely a privacy policy.
 
 ## Main Application Files
 To find the main application files open the `S Responses` Folder.
