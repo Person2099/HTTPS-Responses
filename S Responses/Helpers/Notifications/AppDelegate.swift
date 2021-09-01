@@ -5,11 +5,16 @@
 //  Created by Sebastian Keet on 20/8/21.
 //
 
+//MARK: Import Dependencies
 import Foundation
 import UIKit
 import OneSignal
 
+//MARK: Declare AppDelegate
+// AppDelegate is usually found only is storyboard based applications and not SwiftUI, however it is required by OneSignal (our notification provider) so is declared here
 class AppDelegate: NSObject, UIApplicationDelegate {
+	
+	// Runs upon app launch
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         
         // Remove this method to stop OneSignal Debugging
@@ -19,10 +24,9 @@ class AppDelegate: NSObject, UIApplicationDelegate {
         OneSignal.initWithLaunchOptions(launchOptions)
         OneSignal.setAppId("ef8def33-83bd-4d70-8cbe-20e82ba00c1d")
         
-        // promptForPushNotifications will show the native iOS notification permission prompt.
-        // We recommend removing the following code and instead using an In-App Message to prompt for notification permission (See step 8)
+        // promptForPushNotifications; shows the native iOS notification permission prompt.
         OneSignal.promptForPushNotifications(userResponse: { accepted in
-            print("User accepted notifications: \(accepted)")
+			logger.info("User accepted notifications: \(accepted)")
         })
         
         return true

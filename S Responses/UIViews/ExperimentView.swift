@@ -5,6 +5,9 @@
 //  Created by Sebastian Keet on 23/8/21.
 //
 
+//MARK: This is for testing and is not used in production
+
+#if DEBUG // Prevents this file from building if not in debug mode.
 import SwiftUI
 
 struct Experiment: View {
@@ -33,3 +36,4 @@ struct Experiment_Previews: PreviewProvider {
         Experiment()
     }
 }
+#endif

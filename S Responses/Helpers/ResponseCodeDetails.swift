@@ -4,10 +4,13 @@
 //
 //  Created by Sebastian Keet on 12/8/21.
 //
+
+//MARK: Import Dependencies
 import Foundation
 import SwiftUI
 
-
+// Define All Response Codes
+// This is where listView refers to for Titles and Response Codes
 let responseCodes: [responseType] = [
 	//MARK: 100
 	responseType(name: "Informational", responses: [
@@ -374,7 +377,8 @@ let responseCodes: [responseType] = [
 	])
 ]
 
-
+//MARK: ReDefine All Response Codes
+// This is where the View fetches the simplified and detailed defenitions as well as the type and title.
 class ResponseCodes {
 	//MARK: Error Code
 	let res000 = responseDec(responseCode: 000,

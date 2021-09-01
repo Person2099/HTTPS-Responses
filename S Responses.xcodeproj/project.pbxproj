@@ -208,12 +208,11 @@
 		3207F48626C4955E00D90D50 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				329D398426DF697F00266CB9 /* Notifications */,
+				329D398326DF696500266CB9 /* Navigation */,
+				329D398226DF694800266CB9 /* Settings */,
 				3207F48726C4957600D90D50 /* Variables.swift */,
-				32E2ED5A26CE660C0005BD57 /* DarkModeHelper.swift */,
 				3207F48926C4A88A00D90D50 /* ResponseCodeDetails.swift */,
-				329CC1A726CF73530056CE4D /* AppDelegate.swift */,
-				32B534F026D4DB7A009B4FFF /* NavigationHelper.swift */,
-				32B534F226D4DBDA009B4FFF /* ViewRouter.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -256,6 +255,31 @@
 				329CC19A26CF71B40056CE4D /* Info.plist */,
 			);
 			path = OneSignalNotificationServiceExtension;
+			sourceTree = "<group>";
+		};
+		329D398226DF694800266CB9 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				32E2ED5A26CE660C0005BD57 /* DarkModeHelper.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		329D398326DF696500266CB9 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				32B534F026D4DB7A009B4FFF /* NavigationHelper.swift */,
+				32B534F226D4DBDA009B4FFF /* ViewRouter.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		329D398426DF697F00266CB9 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				329CC1A726CF73530056CE4D /* AppDelegate.swift */,
+			);
+			path = Notifications;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -617,7 +641,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "S Responses/S Responses.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"S Responses/Preview Content\"";
 				DEVELOPMENT_TEAM = 98JA788VTC;
 				ENABLE_PREVIEWS = YES;
@@ -642,7 +666,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "S Responses/S Responses.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"S Responses/Preview Content\"";
 				DEVELOPMENT_TEAM = 98JA788VTC;
 				ENABLE_PREVIEWS = YES;
@@ -748,7 +772,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = 98JA788VTC;
 				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -770,7 +794,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = 98JA788VTC;
 				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;

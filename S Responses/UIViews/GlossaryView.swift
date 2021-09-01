@@ -5,65 +5,73 @@
 //  Created by Sebastian Keet on 27/8/21.
 //
 
+//MARK: Import Dependencies
 import SwiftUI
 import SwiftUIKit
 
+//MARK: GlossaryView Declaration
 struct GlossaryView: View {
+	
+	//MARK: Define variables
+	// Connect ViewRouter as viewRouter
 	@EnvironmentObject var viewRouter: ViewRouter
 	@StateObject private var sheetContext = SheetContext()
 	
+	//MARK: View
 	var body: some View {
 		VStack {
+			
+			// Return Home Button
 			HStack {
 				Button(action: { withAnimation { viewRouter.currentPage = .home } }) { HomeButtonContent() }
 				Spacer()
 			}
+			
+			// Title
 			Text("Glossary")
 				.font(.largeTitle)
 				.bold()
 			
-			
+			// Concepts Defined
 			Form() {
-				RFCDefinition()
+				RFCDefinition() // What is RFC
 					
-				HTTPDefinition()
+				HTTPDefinition() // What is HTTP
 					
-				StatusCodesDefinition()
+				StatusCodesDefinition() // What are HTTP Status Codes
 				
-			}.sheet(context: sheetContext)
+			}
 		}
 	}
 }
 
+//MARK: GlossaryView Extension
+// fileprivate tag only encapsulated functions to be accessed from this file
 fileprivate extension GlossaryView {
-	func webReportIssue() {
-		visit(url: URL(string: "https://httpsresponselookup.onuniverse.com"))
-	}
 	
-	func webPrivacyPolicy() {
-		visit(url: URL(string: "https://httpsresponselookup.onuniverse.com/privacy-policy"))
-	}
-	
-	func webRateUs() {
-		visit(url: URL(string: "https://httpsresponselookup.onuniverse.com"))
-	}
-	
-	func linkTo(address: String) {
-		visit(url: URL(string: address))
-	}
-	
-	func visit(url: URL?) {
-		guard let url = url else { return }
-		sheetContext.present(WebView(url: url))
+	// Opens input URL in web browser
+	func visit(url: String) {
+		if let url = URL(string: url) {
+			UIApplication.shared.open(url)
+		} else {
+			// Handle Errors
+			logger.critical("Glossary URL Did Not Open (URL: \(url)")
+		}
 	}
 }
 
+//MARK: Preview Provider
+// The preview provider is only used in development and indicates what to show while using preview in this document
 struct GlossaryView_Previews: PreviewProvider {
     static var previews: some View {
 		GlossaryView().environmentObject(ViewRouter())
     }
 }
 
+//MARK: Concept Definitions
+// The following are the views for concepts
+
+//MARK: RFC
 struct RFCDefinition: View {
 	var body: some View {
 		Section(footer: Text("Request for Comments. (2021, August 18). In Wikipedia. https://en.wikipedia.org/wiki/Request_for_Comments")) {
@@ -74,7 +82,7 @@ struct RFCDefinition: View {
 				.font(.callout)
 			HStack {
 				Image(systemName: "book")
-				Button(action: {GlossaryView().linkTo(address: "https://en.wikipedia.org/wiki/Request_for_Comments")}, label: {
+				Button(action: {GlossaryView().visit(url: "https://en.wikipedia.org/wiki/Request_for_Comments")}, label: {
 					Text("Read more on Wikipedia")
 				})
 			}
@@ -83,7 +91,7 @@ struct RFCDefinition: View {
 			
 			HStack {
 				Image(systemName: "globe")
-				Button(action: {GlossaryView().linkTo(address: "https://www.rfc-editor.org/retrieve/")}, label: {
+				Button(action: {GlossaryView().visit(url: "https://www.rfc-editor.org/retrieve/")}, label: {
 					Text("RFC Database")
 				})
 			}
@@ -93,6 +101,7 @@ struct RFCDefinition: View {
 	}
 }
 
+//MARK: HTTP
 struct HTTPDefinition: View {
 	var body: some View {
 		Section(footer: Text("Hypertext Transfer Protocol. (2021, August 30). In Wikipedia. https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol")) {
@@ -103,7 +112,7 @@ struct HTTPDefinition: View {
 				.font(.callout)
 			HStack {
 				Image(systemName: "book")
-				Button(action: {GlossaryView().linkTo(address: "https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol")}, label: {
+				Button(action: {GlossaryView().visit(url: "https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol")}, label: {
 					Text("Read more on Wikipedia")
 				})
 			}
@@ -113,6 +122,7 @@ struct HTTPDefinition: View {
 	}
 }
 
+//MARK: HTTP Status Codes
 struct StatusCodesDefinition: View {
 	var body: some View {
 		Section(footer: Text("List of HTTP Status Codes. (2021, August 16). In Wikipedia. https://en.wikipedia.org/wiki/List_of_HTTP_status_codes")) {
@@ -123,7 +133,7 @@ struct StatusCodesDefinition: View {
 				.font(.callout)
 			HStack {
 				Image(systemName: "book")
-				Button(action: {GlossaryView().linkTo(address: "https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol")}, label: {
+				Button(action: {GlossaryView().visit(url: "https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol")}, label: {
 					Text("Read more on Wikipedia")
 				})
 			}
@@ -132,7 +142,7 @@ struct StatusCodesDefinition: View {
 			
 			HStack {
 				Image(systemName: "globe")
-				Button(action: {GlossaryView().linkTo(address: "https://datatracker.ietf.org/doc/html/rfc7231#section-6")}, label: {
+				Button(action: {GlossaryView().visit(url: "https://datatracker.ietf.org/doc/html/rfc7231#section-6")}, label: {
 					Text("RFC7231 HTTP/1.1 - Section 6, Response Status Codes")
 				})
 			}
