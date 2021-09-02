@@ -48,36 +48,6 @@ struct SettingsView: View {
 					.bold()
 				
 				Form {
-					// Display Settings
-					Section(header: Text("Display"), footer: Text("System settings will override Dark Mode and use the current device theme")) {
-						
-						// Dark Mode Toggle
-						Toggle(isOn: $darkModeOption, label: {
-							Text("Dark Mode")
-						})
-						.disabled(true)
-						
-						// Use System Settings Toggle
-						Toggle(isOn: $darkModeUseSystemSettingsOption, label: {
-							Text("Use System Settings")
-						})
-						.disabled(true)
-					}
-					
-					// Link to Report an Issue
-					Section {
-						HStack {
-							Image(systemName: "exclamationmark.triangle")
-								.foregroundColor(.red)
-								.font(.headline)
-							Button(action: {webReportIssue()}, label: {
-								Text("Report an Issue")
-									.foregroundColor(.red)
-									.font(.headline)
-							})
-						}.sheet(context: sheetContext)
-					}
-					
 					// About Section
 					Section(header: Text("About")) {
 						// Current App Version
@@ -103,6 +73,21 @@ struct SettingsView: View {
 								Text("Rate Our App")
 									.font(.headline)
 									.foregroundColor(.label)
+							})
+						}.sheet(context: sheetContext)
+					}
+
+					
+					// Link to Report an Issue
+					Section {
+						HStack {
+							Image(systemName: "exclamationmark.triangle")
+								.foregroundColor(.red)
+								.font(.headline)
+							Button(action: {webReportIssue()}, label: {
+								Text("Report an Issue")
+									.foregroundColor(.red)
+									.font(.headline)
 							})
 						}.sheet(context: sheetContext)
 					}

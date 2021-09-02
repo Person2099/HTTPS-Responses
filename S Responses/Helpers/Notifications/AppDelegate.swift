@@ -25,10 +25,18 @@ class AppDelegate: NSObject, UIApplicationDelegate {
         OneSignal.setAppId("ef8def33-83bd-4d70-8cbe-20e82ba00c1d")
         
         // promptForPushNotifications; shows the native iOS notification permission prompt.
-        OneSignal.promptForPushNotifications(userResponse: { accepted in
-			logger.info("User accepted notifications: \(accepted)")
-        })
+        registerForPushNotifications()
         
         return true
     }
+	
+	func registerForPushNotifications() {
+		//1
+		UNUserNotificationCenter.current()
+			//2
+			.requestAuthorization(options: [.alert, .sound, .badge]) { granted, _ in
+				//3
+				logger.log("Permission granted: \(granted)")
+			}
+	}
 }

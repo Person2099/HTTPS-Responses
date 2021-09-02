@@ -31,8 +31,6 @@
 		32B534F126D4DB7A009B4FFF /* NavigationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B534F026D4DB7A009B4FFF /* NavigationHelper.swift */; };
 		32B534F326D4DBDA009B4FFF /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B534F226D4DBDA009B4FFF /* ViewRouter.swift */; };
 		32B534F526D4DC08009B4FFF /* MotherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B534F426D4DC08009B4FFF /* MotherView.swift */; };
-		32E2ED5B26CE660C0005BD57 /* DarkModeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E2ED5A26CE660C0005BD57 /* DarkModeHelper.swift */; };
-		32F3BE2726E05BC900C43D45 /* CustomEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F3BE2626E05BC900C43D45 /* CustomEnums.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,8 +102,6 @@
 		32B534F026D4DB7A009B4FFF /* NavigationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationHelper.swift; sourceTree = "<group>"; };
 		32B534F226D4DBDA009B4FFF /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
 		32B534F426D4DC08009B4FFF /* MotherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotherView.swift; sourceTree = "<group>"; };
-		32E2ED5A26CE660C0005BD57 /* DarkModeHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkModeHelper.swift; sourceTree = "<group>"; };
-		32F3BE2626E05BC900C43D45 /* CustomEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomEnums.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,10 +208,8 @@
 			children = (
 				329D398426DF697F00266CB9 /* Notifications */,
 				329D398326DF696500266CB9 /* Navigation */,
-				329D398226DF694800266CB9 /* Settings */,
 				3207F48726C4957600D90D50 /* Variables.swift */,
 				3207F48926C4A88A00D90D50 /* ResponseCodeDetails.swift */,
-				32F3BE2626E05BC900C43D45 /* CustomEnums.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -258,14 +252,6 @@
 				329CC19A26CF71B40056CE4D /* Info.plist */,
 			);
 			path = OneSignalNotificationServiceExtension;
-			sourceTree = "<group>";
-		};
-		329D398226DF694800266CB9 /* Settings */ = {
-			isa = PBXGroup;
-			children = (
-				32E2ED5A26CE660C0005BD57 /* DarkModeHelper.swift */,
-			);
-			path = Settings;
 			sourceTree = "<group>";
 		};
 		329D398326DF696500266CB9 /* Navigation */ = {
@@ -469,10 +455,8 @@
 				3243B69C26C5DBCA0084E1B6 /* ListView.swift in Sources */,
 				32B534F126D4DB7A009B4FFF /* NavigationHelper.swift in Sources */,
 				324E1F1D26CB991200EB9E07 /* HomeView.swift in Sources */,
-				32E2ED5B26CE660C0005BD57 /* DarkModeHelper.swift in Sources */,
 				3275173F26D897240034EEE2 /* GlossaryView.swift in Sources */,
 				3207F45C26C494E300D90D50 /* S_ResponsesApp.swift in Sources */,
-				32F3BE2726E05BC900C43D45 /* CustomEnums.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

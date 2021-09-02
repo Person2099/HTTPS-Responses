@@ -16,7 +16,8 @@ struct S_ResponsesApp: App {
     
     var body: some Scene {
         WindowGroup {
-			MotherView().environmentObject(viewRouter) // Display page indicated in ViewRouter
-        }
+			MotherView()
+				.environmentObject(viewRouter) // Display page indicated in ViewRouter
+		}
     }
 }

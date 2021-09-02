@@ -54,6 +54,8 @@ struct DetailView: View {
 								.bold()
 								.padding()
 								.foregroundColor(.black)
+								.fixedSize(horizontal: false, vertical: true)
+								.multilineTextAlignment(.center)
 						}
 						
 						VStack {
