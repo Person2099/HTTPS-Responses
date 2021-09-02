@@ -20,11 +20,6 @@ struct SettingsView: View {
 	
 	//MARK: Define Variables
 	@StateObject private var sheetContext = SheetContext()
-	@State public var informationalColor = Color(.white)
-	@State public var successColor = Color(UIColor(red: 88/255, green: 176/255, blue: 0/255, alpha: 1))
-	@State public var redirectColor = Color(UIColor(red: 114/255, green: 221/255, blue: 247/255, alpha: 1))
-	@State public var clientErrorColor = Color(UIColor(red: 255/255, green: 51/255, blue: 51/255, alpha: 1))
-	@State public var serverErrorColor = Color(UIColor(red: 255/255, green: 255/255, blue: 51/255, alpha: 1))
 	@State var darkModeOption = false
 	@State var darkModeUseSystemSettingsOption = true
 	
@@ -67,26 +62,6 @@ struct SettingsView: View {
 							Text("Use System Settings")
 						})
 						.disabled(true)
-					}
-					// Background Colours Section
-					Section(header: Text("Custom Background Colours")) {
-						ColorPicker("Informational", selection: $informationalColor )
-						ColorPicker("Success", selection: $successColor )
-						ColorPicker("Redirect", selection: $redirectColor )
-						ColorPicker("Client Error", selection: $clientErrorColor )
-						ColorPicker("Server Error", selection: $serverErrorColor )
-						
-						// Reset Background Colours to Default Button
-						Button(action: {
-							informationalColor = Color(.white)
-							successColor = Color(UIColor(red: 88/255, green: 176/255, blue: 0/255, alpha: 1))
-							redirectColor = Color(UIColor(red: 114/255, green: 221/255, blue: 247/255, alpha: 1))
-							clientErrorColor = Color(UIColor(red: 255/255, green: 51/255, blue: 51/255, alpha: 1))
-							serverErrorColor = Color(UIColor(red: 255/255, green: 255/255, blue: 51/255, alpha: 1))
-						}, label: {
-							Text("Default Background Colours")
-								.font(.headline)
-						})
 					}
 					
 					// Link to Report an Issue
@@ -134,6 +109,28 @@ struct SettingsView: View {
 				}
 			}
 		}
+	}
+}
+
+//MARK: UserDefaults Extension
+// Adds an "exists()" function to userdefaults allowing to check for existence
+extension UserDefaults {
+	static func exists(key: String) -> Bool {
+		return UserDefaults.standard.object(forKey: key) != nil
+	}
+}
+
+//MARK: UIColor Extension
+// Make it easier to get rgba values of a uicolour
+extension UIColor {
+	var rgba: (red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat) {
+		var red: CGFloat = 0
+		var green: CGFloat = 0
+		var blue: CGFloat = 0
+		var alpha: CGFloat = 0
+		getRed(&red, green: &green, blue: &blue, alpha: &alpha)
+		
+		return (red, green, blue, alpha)
 	}
 }
 
@@ -192,11 +189,11 @@ struct HomeButtonContent : View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            SettingsView()
+			SettingsView()
 				.environmentObject(ViewRouter())
                 .environment(\.colorScheme, .light)
             
-            SettingsView()
+			SettingsView()
 				.environmentObject(ViewRouter())
                 .environment(\.colorScheme, .dark)
         }

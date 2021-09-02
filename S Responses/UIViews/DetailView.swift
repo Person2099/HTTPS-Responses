@@ -102,19 +102,20 @@ extension DetailView {
 	// Returns Background Colour Based On RCType
 	func Background() -> UIColor {
 		if Variables().RCRelation[current]!.responseCodeType == "Informational" {
-			return UIColor(SettingsView().informationalColor)
+			// White
+			return UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1)
 		} else if Variables().RCRelation[current]!.responseCodeType == "Success" {
 			// Green
-			return UIColor(SettingsView().successColor)
+			return UIColor(red: 88/255, green: 176/255, blue: 0/255, alpha: 1)
 		} else if Variables().RCRelation[current]!.responseCodeType == "Redirection" {
 			// Blue
-			return UIColor(SettingsView().redirectColor)
+			return UIColor(red: 114/255, green: 221/255, blue: 247/255, alpha: 1)
 		} else if Variables().RCRelation[current]!.responseCodeType == "Client Error" {
 			// Red
-			return UIColor(SettingsView().clientErrorColor)
+			return UIColor(red: 255/255, green: 51/255, blue: 51/255, alpha: 1)
 		} else if Variables().RCRelation[current]!.responseCodeType == "Server Error" {
 			// Yellow
-			return UIColor(SettingsView().serverErrorColor)
+			return UIColor(red: 255/255, green: 255/255, blue: 51/255, alpha: 1)
 		} else {
 			return .gray // Preventing Crash upon unexpected error
 		}
