@@ -25,7 +25,11 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>We require your location to...</string>
+	<string>We do not require your location.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>We do not require your location.</string>
+	<key>NSLocationUsageDescription</key>
+	<string>We do not require your location.</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>bahnschrift.ttf</string>
