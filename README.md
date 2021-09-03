@@ -1,6 +1,10 @@
 # HTTPS-Responses
-Find our website here: https://httpsresponselookup.onuniverse.com/
-The website was created using Universe (https://www.onuniverse.com) and fulfills the neccesary requirements for beta testing via TestFlight, namely a privacy policy.
+Find our website here: https://httpsresponselookup.onuniverse.com/. The website was created using Universe (https://www.onuniverse.com) and fulfills the neccesary requirements for beta testing via TestFlight, namely a privacy policy.
+
+## Contributors
+@Person2099 (https://github.com/Person2099) is Sebastian,
+@Person2098 (https://github.com/Person2098) is Hunter and
+@Person2097 (https://github.com/Person2097) is Luke.
 
 ## Main Application Files
 To find the main application files open the `S Responses` Folder.
