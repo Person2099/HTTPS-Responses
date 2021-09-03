@@ -39,6 +39,7 @@ struct SettingsView: View {
 						HomeButtonContent() // UI of Home Button
 						
 					}
+					.keyboardShortcut(.cancelAction)
 					Spacer()
 				}
 				

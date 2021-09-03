@@ -27,13 +27,11 @@ struct HomeView: View {
 	@State private var alertBody = ""
 	
 	// Other Variables
-	@State var item = 000
-	let mainViewDispatchQueue = DispatchQueue(label: "mainViewDispatchQueue")
-	
+	@State var item = 000	
 	
 	//MARK: View
 	// This section defines the UI of the HomeView
-    var body: some View {
+	var body: some View {
 		// A ZStack allowing the background to be shown behind the general view
 		ZStack {
 			LinearGradient(gradient: Gradient(colors: [Color(UIColor(red: 216/255, green: 212/255, blue: 212/255, alpha: 1)), Color(.systemBlue)]), startPoint: .topLeading, endPoint: .bottomTrailing)
@@ -44,8 +42,10 @@ struct HomeView: View {
 				// Title
 				Text("HTTP/S Response Code Lookup")
 					.fontWeight(.heavy)
-					.font(.largeTitle)
+					.font(.system(size: 45))
 					.multilineTextAlignment(.center)
+					.padding()
+					.fixedSize(horizontal: false, vertical: true)
 				
 				// VStack including Buttons and Search bar
 				VStack {
@@ -54,16 +54,24 @@ struct HomeView: View {
 					HStack {
 						Image(systemName: "magnifyingglass")
 						TextField("Response Code", text: $search)
-						.keyboardType(.numberPad)
+							.keyboardType(.numberPad)
 						
 						Button("Search") {
 							// Upon search button pressed hide keyboard and validate entry using functions below
 							hideKeyboard()
 							validate(submitted: search)
 						}
+						.keyboardShortcut(.defaultAction)
+						
+						Button("") {
+							hideKeyboard()
+							search = ""
+						}
+						.keyboardShortcut(.cancelAction)
 					}
 					.modifier(customViewModifier(roundedCorners: 6, startColor: .green, endColor: .blue, textColor: .white)) // Search Bar Colour
 					.frame(width: (UIScreen.main.bounds.width / 4) * 2.75) // Search Bar Size (Width) relative to screen
+					.padding()
 					
 					// VStack of buttons
 					VStack {
@@ -76,11 +84,15 @@ struct HomeView: View {
 						}) {
 							// UI Of Button
 							HStack {
+								Spacer()
 								Text("Response List")
 									.bold()
 								Image(systemName: "list.bullet")
+								Spacer()
 							}
 						}.buttonStyle(DarkButtonStyle()) // Style Button (Defined Below)
+						.frame(width: (UIScreen.main.bounds.width / 6) * 5)
+						.padding(.top)
 						
 						// Button presenting SettingsView
 						Button(action: {
@@ -91,11 +103,15 @@ struct HomeView: View {
 						}) {
 							// UI Of Button
 							HStack {
+								Spacer()
 								Text("Settings")
 									.bold()
 								Image(systemName: "gear")
+								Spacer()
 							}
 						}.buttonStyle(DarkButtonStyle()) // Style Button (Defined Below)
+						.frame(width: (UIScreen.main.bounds.width / 6) * 5)
+						.padding(.top)
 						
 						// Button presenting GlossaryView
 						Button(action: {
@@ -106,13 +122,17 @@ struct HomeView: View {
 						}) {
 							// UI Of Button
 							HStack {
+								Spacer()
 								Text("Glossary")
 									.bold()
 								Image(systemName: "character.book.closed")
+								Spacer()
 							}
 						}.buttonStyle(DarkButtonStyle())
+						.frame(width: (UIScreen.main.bounds.width / 6) * 5)
+						.padding(.top)
 					}
-				}
+				}.padding()
 			}.padding()
 			
 			// AlertView For showing popup alerts in validation stage
@@ -123,7 +143,7 @@ struct HomeView: View {
 				)
 			}
 		}
-    }
+	}
 }
 
 //MARK: Private Extension of HomeView
@@ -145,21 +165,24 @@ extension HomeView {
 		if submitted.count == 0 {
 			//No entry: Handle Error
 			isLoading.toggle()
+			logger.info("Could Not Validate: Blank Entry")
 			return // No UI Change. Allows Search button to double as dismiss button for keyboard when containing no text.
 		}
 		
 		// Invalid if not three numbers in length
 		if submitted.count != 3 {
 			// Not 3 Digits: Handle Error
-			alert(requestedTitle: "Oh No!", requestedBody: "It looks like the response code you input was an incorrect length\nIt should be three (3) numbers long")
+			alert(requestedTitle: "Oh No!", requestedBody: "It looks like the response code you input was an incorrect length\nIt should be three (3) numbers long e.g (101)")
 			search = ""
+			logger.info("Could Not Validate: Not 3 Digits")
 			return // Show alert and return
 		}
 		
 		// Ensure input is integer (convert from string)
 		guard let searchInt = Int (submitted) else {
 			// Conversion failed: Handle Error
-			alert(requestedTitle: "Error", requestedBody: "Unfortunately an error has occured on our end 😔\nPlease contact the development team if this error persists")
+			alert(requestedTitle: "Error", requestedBody: "It Looks like you didn't enter a number! It should be three (3) numbers long e.g (101)")
+			logger.info("Could Not Validate: Not Number")
 			search = ""
 			return // Show alert and return
 		}
@@ -169,11 +192,13 @@ extension HomeView {
 			// Not in database: Handle Error
 			alert(requestedTitle: "Not Found", requestedBody: "Unfortunately that response code is not in our database. If you think this was a mistake please report this to us via the settings page.")
 			search = ""
+			logger.info("Could Not Validate: Not In Database")
 			return // Show alert and return
 		}
 		
 		// Continue to detailView through loadingView if valid entry
 		// Forward entry to detailView to prepare Information
+		logger.info("Passed Validation")
 		forwardID(id: searchInt)
 		withAnimation() {
 			viewRouter.currentPage = .loading
@@ -229,16 +254,16 @@ struct DarkButtonStyle: ButtonStyle {
 //MARK: Preview Provider
 // The preview provider is only used in development and indicates what to show while using preview in this document
 struct HomeView_Previews: PreviewProvider {
-    static var previews: some View {
+	static var previews: some View {
 		// Two Previews (Dark Mode and Light Mode)
-        Group {
+		Group {
 			HomeView()
 				.environmentObject(ViewRouter())
-                .environment(\.colorScheme, .light)
-            
-            HomeView()
+				.environment(\.colorScheme, .light)
+			
+			HomeView()
 				.environmentObject(ViewRouter())
-                .environment(\.colorScheme, .dark)
-        }
-    }
+				.environment(\.colorScheme, .dark)
+		}
+	}
 }

@@ -38,6 +38,7 @@ struct DetailView: View {
 						HomeButtonContent() // UI of Home Button
 						
 					}
+					.keyboardShortcut(.cancelAction)
 					Spacer()
 				}
 				ScrollView { // Allows text to flow out of view area and be scrolled to

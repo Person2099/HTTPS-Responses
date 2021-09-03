@@ -28,6 +28,7 @@ struct ListView: View {
 				}, label: {
 					HomeButtonContent()
 				})
+				.keyboardShortcut(.cancelAction)
 				
 				Spacer()
 			}
