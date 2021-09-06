@@ -8,6 +8,7 @@
 //MARK: Import Dependencies
 import SwiftUI
 import SwiftUIKit
+import Sentry
 
 //MARK: SettingsView Declaration
 struct SettingsView: View {
@@ -65,7 +66,7 @@ struct SettingsView: View {
 									.font(.headline)
 									.foregroundColor(.label)
 							})
-						}
+						}.sheet(context: sheetContext)
 						
 						// Rate Us Button (Will link to app store however currently forwards to website)
 						HStack {
@@ -93,11 +94,16 @@ struct SettingsView: View {
 						}.sheet(context: sheetContext)
 					}
 					
-					Section(header: "", footer: "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.") {
+					Section() {
 						VStack {
 							Image("CC BY SA Licence")
 								.padding(.top)
 								.multilineTextAlignment(.center)
+							Text("This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.")
+								.foregroundColor(.link)
+								.multilineTextAlignment(.center)
+								.fixedSize(horizontal: false, vertical: true)
+								.font(.callout, weight: .semibold)
 							Button(action: {webCCBYSALicence()}, label: {})
 						}.sheet(context: sheetContext)
 					}
@@ -146,7 +152,7 @@ extension SettingsView {
 	
 	// Forward To Report an Issue Sheet (currently forwards to app website)
 	private func webReportIssue() {
-		visit(url: URL(string: "https://httpsresponselookup.onuniverse.com"))
+		visit(url: URL(string: "https://httpsresponses.typeform.com/app-feedback"))
 	}
 	
 	// Forward to Privacy Policy website
@@ -156,9 +162,10 @@ extension SettingsView {
 	
 	// Forward to app store (currently forwards to app website)
 	private func webRateUs() {
-		visit(url: URL(string: "https://httpsresponselookup.onuniverse.com"))
+		visit(url: URL(string: "https://apps.apple.com/us/app/http-s-responses/id1580906147"))
 	}
 	
+	// Forward to Creative Commons Licence Details
 	private func webCCBYSALicence() {
 		visit(url: URL(string: "https://creativecommons.org/licenses/by-sa/4.0/"))
 	}

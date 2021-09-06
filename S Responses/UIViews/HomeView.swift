@@ -53,7 +53,7 @@ struct HomeView: View {
 					// Search Bar
 					HStack {
 						Image(systemName: "magnifyingglass")
-						TextField("Response Code", text: $search)
+						TextField("Enter Code", text: $search)
 							.keyboardType(.numberPad)
 						
 						Button("Search") {
@@ -94,25 +94,6 @@ struct HomeView: View {
 						.frame(width: (UIScreen.main.bounds.width / 6) * 5)
 						.padding(.top)
 						
-						// Button presenting SettingsView
-						Button(action: {
-							// Show SettingsView with animation (animation defined in MotherView.swift)
-							withAnimation {
-								viewRouter.currentPage = .settings
-							}
-						}) {
-							// UI Of Button
-							HStack {
-								Spacer()
-								Text("Settings")
-									.bold()
-								Image(systemName: "gear")
-								Spacer()
-							}
-						}.buttonStyle(DarkButtonStyle()) // Style Button (Defined Below)
-						.frame(width: (UIScreen.main.bounds.width / 6) * 5)
-						.padding(.top)
-						
 						// Button presenting GlossaryView
 						Button(action: {
 							// Show GlossaryView with animation (animation defined in MotherView.swift)
@@ -129,6 +110,25 @@ struct HomeView: View {
 								Spacer()
 							}
 						}.buttonStyle(DarkButtonStyle())
+						.frame(width: (UIScreen.main.bounds.width / 6) * 5)
+						.padding(.top)
+						
+						// Button presenting SettingsView
+						Button(action: {
+							// Show SettingsView with animation (animation defined in MotherView.swift)
+							withAnimation {
+								viewRouter.currentPage = .settings
+							}
+						}) {
+							// UI Of Button
+							HStack {
+								Spacer()
+								Text("Settings")
+									.bold()
+								Image(systemName: "gear")
+								Spacer()
+							}
+						}.buttonStyle(DarkButtonStyle()) // Style Button (Defined Below)
 						.frame(width: (UIScreen.main.bounds.width / 6) * 5)
 						.padding(.top)
 					}

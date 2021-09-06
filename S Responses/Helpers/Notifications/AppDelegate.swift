@@ -20,7 +20,6 @@ class AppDelegate: NSObject, UIApplicationDelegate {
         
 		SentrySDK.start { options in
 			options.dsn = "https://45e18479122e4c4c84f73d8d4569f982@o297509.ingest.sentry.io/5946719"
-			options.debug = true // Enabled debug when first installing is always helpful
 			options.sessionTrackingIntervalMillis = 60000
 			options.tracesSampleRate = 1.0
 		}

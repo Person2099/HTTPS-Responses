@@ -69,6 +69,7 @@ struct DetailView: View {
 										.opacity(0.15)
 								)
 								.foregroundColor(.black)
+								.multilineTextAlignment(.center)
 							
 							// Detailed Definition
 							Text(Variables().RCRelation[current]?.detailedDef ?? "AN ERROR HAS OCCURED PLEASE CONTACT THE HTTP/S LOOKUP DEVELOPMENT TEAM")
@@ -79,6 +80,7 @@ struct DetailView: View {
 										.opacity(0.15)
 								)
 								.foregroundColor(.black)
+								.multilineTextAlignment(.center)
 						}
 						
 						Spacer()

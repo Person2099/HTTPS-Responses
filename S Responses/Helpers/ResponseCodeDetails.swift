@@ -390,7 +390,7 @@ class ResponseCodes {
 	//MARK: 1** Response Codes
 	let res100 = responseDec(responseCode: 100,
 							 responseCodeTitle: "Continue",
-							 simplifiedDef: "Simplified Error",
+							 simplifiedDef: "The request should be continued. This response indicates that the first part of the request is being processed and the rest of the request should be completed.",
 							 responseCodeType: "Informational",
 							 detailedDef: "The client SHOULD continue with its request. This interim response is used to inform the client that the initial part of the request has been received and has not yet been rejected by the server. The client SHOULD continue by sending the remainder of the request or, if the request has already been completed, ignore this response. The server MUST send a final response after the request has been completed.")
 	let res101 = responseDec(responseCode: 101,
@@ -414,7 +414,7 @@ The 102 (Processing) status code is an interim response used to inform the clien
 	//MARK: 2** Response Codes
 	let res200 = responseDec(responseCode: 200,
 							 responseCodeTitle: "Ok",
-							 simplifiedDef: "placeholderSimplifiedDef",
+							 simplifiedDef: "The request has succeeded. This response may also contain information based on the request.",
 							 responseCodeType: "Success",
 							 detailedDef:
 								"""
@@ -510,7 +510,7 @@ A response received with a status code of 226 MAY be used by a cache, in conjunc
 	//MARK: 3** Response Codes
 	let res300 = responseDec(responseCode: 300,
 							 responseCodeTitle: "Multiple Choices",
-							 simplifiedDef: "placeholderSimplifiedDef",
+							 simplifiedDef: "This response indicates that there are multiple versions, or choices, of the requested data and is providing the client with the ability to choose which one to use.",
 							 responseCodeType: "Redirection",
 							 detailedDef:
 								"""
@@ -610,9 +610,9 @@ The request, and all future requests should be repeated using another URI. 307 a
 	//MARK: 4** Response Codes
 	let res400 = responseDec(responseCode: 400,
 							 responseCodeTitle: "Bad Request",
-							 simplifiedDef: "placeholderSimplifiedDef",
+							 simplifiedDef: "The request could not be understood by the server.",
 							 responseCodeType: "Client Error",
-							 detailedDef: "placeholder")
+							 detailedDef: "The request could not be understood by the server due to malformed syntax. The client SHOULD NOT repeat the request without modifications.")
 	let res401 = responseDec(responseCode: 401,
 							 responseCodeTitle: "Unauthorised",
 							 simplifiedDef: "placeholderSimplifiedDef",
@@ -777,7 +777,7 @@ The request, and all future requests should be repeated using another URI. 307 a
 	//MARK: 5** Response Codes
 	let res500 = responseDec(responseCode: 500,
 							 responseCodeTitle: "Internal Server Error",
-							 simplifiedDef: "placeholderSimplifiedDef",
+							 simplifiedDef: "The server encountered an error and could not complete the request.",
 							 responseCodeType: "Server Error",
 							 detailedDef: "The server encountered an unexpected condition which prevented it from fulfilling the request.")
 	let res501 = responseDec(responseCode: 501,

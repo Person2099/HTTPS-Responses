@@ -54,7 +54,7 @@ struct LoadingView: View {
 // Extension used for functions
 extension LoadingView {
 	func loadAnimation() {
-		DispatchQueue.main.asyncAfter(deadline: .now() + Double.random(in: 1.0...1.5)) {
+		DispatchQueue.main.asyncAfter(deadline: .now() + Double.random(in: 0.5...1.0)) {
 			withAnimation() {
 				viewRouter.currentPage = .detail
 			}
