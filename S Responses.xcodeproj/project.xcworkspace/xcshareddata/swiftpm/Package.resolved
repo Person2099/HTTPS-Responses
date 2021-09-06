@@ -11,6 +11,15 @@
         }
       },
       {
+        "package": "Sentry",
+        "repositoryURL": "https://github.com/getsentry/sentry-cocoa.git",
+        "state": {
+          "branch": null,
+          "revision": "eb09cfa3ebcb96ca4a7f8f8de6c5d7aff4c48c0e",
+          "version": "7.2.7"
+        }
+      },
+      {
         "package": "SwiftUIKit",
         "repositoryURL": "https://github.com/danielsaidi/SwiftUIKit.git",
         "state": {
