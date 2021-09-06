@@ -92,6 +92,15 @@ struct SettingsView: View {
 							})
 						}.sheet(context: sheetContext)
 					}
+					
+					Section(header: "", footer: "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.") {
+						VStack {
+							Image("CC BY SA Licence")
+								.padding(.top)
+								.multilineTextAlignment(.center)
+							Button(action: {webCCBYSALicence()}, label: {})
+						}.sheet(context: sheetContext)
+					}
 				}
 			}
 		}
@@ -148,6 +157,10 @@ extension SettingsView {
 	// Forward to app store (currently forwards to app website)
 	private func webRateUs() {
 		visit(url: URL(string: "https://httpsresponselookup.onuniverse.com"))
+	}
+	
+	private func webCCBYSALicence() {
+		visit(url: URL(string: "https://creativecommons.org/licenses/by-sa/4.0/"))
 	}
 	
 	// Visits input URL
