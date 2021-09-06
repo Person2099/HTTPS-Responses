@@ -2,9 +2,9 @@
 Find our website here: https://httpsresponselookup.onuniverse.com/. The website was created using Universe (https://www.onuniverse.com) and fulfills the neccesary requirements for beta testing via TestFlight, namely a privacy policy.
 
 ## Contributors
-@Person2099 (https://github.com/Person2099) is Sebastian,
-@Person2098 (https://github.com/Person2098) is Hunter and
-@Person2097 (https://github.com/Person2097) is Luke.
+### @Person2099 (https://github.com/Person2099) is Sebastian.
+### @Person2098 (https://github.com/Person2098) is Hunter.
+### @Person2097 (https://github.com/Person2097) is Luke.
 
 ## Main Application Files
 To find the main application files open the `S Responses` Folder.
@@ -19,6 +19,7 @@ This application relies on the following external swift packages:
 - `SwiftUIX` - https://github.com/OneSignal/OneSignal-XCFramework.git (Open Source) ✅ (Secure) 🔐
 - `SwiftUIKit` - https://github.com/danielsaidi/SwiftUIKit.git (Open Source) ✅ (Secure) 🔐
 - `OneSignalXCFramework` - https://github.com/SwiftUIX/SwiftUIX.git (Open Source) ✅ (Secure) 🔐
+- `Sentry` - https://github.com/getsentry/sentry-cocoa.git (Open Source) ✅ (Secure) 🔐
 
 ### Fonts
 Font files (.ttf) can be found under `S Responses` in the `Fonts` folder.
