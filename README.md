@@ -1,4 +1,8 @@
 # HTTPS-Responses
+Our app is avaliable here: https://apps.apple.com/us/app/http-s-responses/id1580906147
+
+The app will be released from preorder on Friday 9th September
+
 Find our website here: https://httpsresponselookup.onuniverse.com/. The website was created using Universe (https://www.onuniverse.com) and fulfills the neccesary requirements for beta testing via TestFlight, namely a privacy policy.
 
 ## Contributors
