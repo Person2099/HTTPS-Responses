@@ -48,6 +48,8 @@ struct GlossaryView: View {
 					UniformResourceIdentifierDefinition() // URI Def
 					
 					HTTPHeaderFields() // HTTP Header Fields
+					
+					SimpleDefs()
 
 				}
 			}
@@ -200,7 +202,7 @@ struct HTTPVersion1_1SpecDefinition: View {
 	}
 }
 
-//MARK: Uniform Resource Identifier (URI))
+//MARK: Uniform Resource Identifier (URI)
 struct UniformResourceIdentifierDefinition: View {
 	var body: some View {
 		Section() {
@@ -225,11 +227,8 @@ struct UniformResourceIdentifierDefinition: View {
 	}
 }
 
-//MARK: HTTP Header Fields)
+//MARK: HTTP Header Fields
 struct HTTPHeaderFields: View {
-	let headerFields: [String] = []
-	let responseFields: [String] = []
-	
 	var body: some View {
 		Section() {
 			DisclosureGroup("HTTP Header Fields") {
@@ -253,3 +252,39 @@ struct HTTPHeaderFields: View {
 		.padding()
 	}
 }
+
+//MARK: Simple Definitions
+struct SimpleDefs: View {
+	var body: some View {
+		Section() {
+			DisclosureGroup("Simple Definitions") {
+				DisclosureGroup("Metainformation") {
+					Text("Metainformation is information about information. For example, a if a document is considered to be information, its title, location, and subject are examples of metainformation. This term is sometimes used interchangably with the term metadata.")
+						.font(.body)
+				}
+				.font(.callout, weight: .bold)
+				
+				DisclosureGroup("E-Tag") {
+					Text("The E-Tag or entity tag is part of HTTP. It is one of several mechanisms that HTTP provides for Web cache validation, which allows a client to make conditional requests. This mechanism allows caches to be more efficient and saves bandwidth, as a Web server does not need to send a full response if the content has not changed. ETags can also be used for optimistic concurrency control to help prevent simultaneous updates of a resource from overwriting each other.")
+						.font(.body)
+				}
+				.font(.callout, weight: .bold)
+
+				DisclosureGroup("WebDAV") {
+					Text("WebDAV is an extension of the Hypertext Transfer Protocol (HTTP) that allows clients to perform remote Web content authoring operations. WebDAV is defined in RFC 4918 by a working group of the Internet Engineering Task Force. The WebDAV protocol provides a framework for users to create, change and move documents on a server.")
+						.font(.body)
+				}
+				.font(.callout, weight: .bold)
+
+				DisclosureGroup("Internet Protocol Suite") {
+					Text("The Internet protocol suite, commonly known as TCP/IP, is the set of communications protocols used in the Internet and similar computer networks. The current foundational protocols in the suite are the Transmission Control Protocol (TCP) and the Internet Protocol (IP).")
+						.font(.body)
+				}
+				.font(.callout, weight: .bold)
+			}
+			.font(.title2, weight: .bold)
+		}
+		.padding()
+	}
+}
+
