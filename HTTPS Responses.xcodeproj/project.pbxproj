@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -27,7 +27,7 @@
 		326334B826E58B9700C4BCBD /* Sentry in Frameworks */ = {isa = PBXBuildFile; productRef = 326334B726E58B9700C4BCBD /* Sentry */; };
 		3275173F26D897240034EEE2 /* GlossaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3275173E26D897240034EEE2 /* GlossaryView.swift */; };
 		329CC19926CF71B40056CE4D /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329CC19826CF71B40056CE4D /* NotificationService.swift */; };
-		329CC19D26CF71B40056CE4D /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 329CC19626CF71B40056CE4D /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		329CC19D26CF71B40056CE4D /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 329CC19626CF71B40056CE4D /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		329CC1A826CF73530056CE4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329CC1A726CF73530056CE4D /* AppDelegate.swift */; };
 		32B534F126D4DB7A009B4FFF /* NavigationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B534F026D4DB7A009B4FFF /* NavigationHelper.swift */; };
 		32B534F326D4DBDA009B4FFF /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B534F226D4DBDA009B4FFF /* ViewRouter.swift */; };
@@ -59,15 +59,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		329CC1A126CF71B40056CE4D /* Embed App Extensions */ = {
+		329CC1A126CF71B40056CE4D /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				329CC19D26CF71B40056CE4D /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */,
+				329CC19D26CF71B40056CE4D /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */,
 			);
-			name = "Embed App Extensions";
+			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -283,7 +283,7 @@
 				3207F45426C494E300D90D50 /* Sources */,
 				3207F45526C494E300D90D50 /* Frameworks */,
 				3207F45626C494E300D90D50 /* Resources */,
-				329CC1A126CF71B40056CE4D /* Embed App Extensions */,
+				329CC1A126CF71B40056CE4D /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
@@ -362,8 +362,9 @@
 		3207F45026C494E300D90D50 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1250;
-				LastUpgradeCheck = 1250;
+				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					3207F45726C494E300D90D50 = {
 						CreatedOnToolsVersion = 12.5.1;
@@ -767,7 +768,7 @@
 				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_TEAM = 98JA788VTC;
 				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -789,7 +790,7 @@
 				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_TEAM = 98JA788VTC;
 				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
