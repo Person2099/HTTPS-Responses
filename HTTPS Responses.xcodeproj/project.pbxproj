@@ -73,16 +73,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		3207F45826C494E300D90D50 /* S Responses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "S Responses.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3207F45826C494E300D90D50 /* HTTPS Responses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HTTPS Responses.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3207F45B26C494E300D90D50 /* S_ResponsesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S_ResponsesApp.swift; sourceTree = "<group>"; };
 		3207F45D26C494E300D90D50 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		3207F45F26C494E500D90D50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3207F46226C494E500D90D50 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3207F46426C494E500D90D50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3207F46926C494E500D90D50 /* S ResponsesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "S ResponsesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3207F46926C494E500D90D50 /* HTTPS ResponsesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HTTPS ResponsesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3207F46D26C494E500D90D50 /* S_ResponsesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S_ResponsesTests.swift; sourceTree = "<group>"; };
 		3207F46F26C494E500D90D50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3207F47426C494E500D90D50 /* S ResponsesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "S ResponsesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3207F47426C494E500D90D50 /* HTTPS ResponsesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HTTPS ResponsesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3207F47826C494E500D90D50 /* S_ResponsesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S_ResponsesUITests.swift; sourceTree = "<group>"; };
 		3207F47A26C494E500D90D50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3207F48726C4957600D90D50 /* Variables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Variables.swift; sourceTree = "<group>"; };
@@ -156,9 +156,9 @@
 		3207F45926C494E300D90D50 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3207F45826C494E300D90D50 /* S Responses.app */,
-				3207F46926C494E500D90D50 /* S ResponsesTests.xctest */,
-				3207F47426C494E500D90D50 /* S ResponsesUITests.xctest */,
+				3207F45826C494E300D90D50 /* HTTPS Responses.app */,
+				3207F46926C494E500D90D50 /* HTTPS ResponsesTests.xctest */,
+				3207F47426C494E500D90D50 /* HTTPS ResponsesUITests.xctest */,
 				329CC19626CF71B40056CE4D /* OneSignalNotificationServiceExtension.appex */,
 			);
 			name = Products;
@@ -276,9 +276,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3207F45726C494E300D90D50 /* S Responses */ = {
+		3207F45726C494E300D90D50 /* HTTPS Responses */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3207F47D26C494E500D90D50 /* Build configuration list for PBXNativeTarget "S Responses" */;
+			buildConfigurationList = 3207F47D26C494E500D90D50 /* Build configuration list for PBXNativeTarget "HTTPS Responses" */;
 			buildPhases = (
 				3207F45426C494E300D90D50 /* Sources */,
 				3207F45526C494E300D90D50 /* Frameworks */,
@@ -290,7 +290,7 @@
 			dependencies = (
 				329CC19C26CF71B40056CE4D /* PBXTargetDependency */,
 			);
-			name = "S Responses";
+			name = "HTTPS Responses";
 			packageProductDependencies = (
 				324E1F1726CB8C9700EB9E07 /* SwiftUIX */,
 				325F4FC026D36664002877AA /* OneSignal */,
@@ -298,12 +298,12 @@
 				326334B726E58B9700C4BCBD /* Sentry */,
 			);
 			productName = "S Responses";
-			productReference = 3207F45826C494E300D90D50 /* S Responses.app */;
+			productReference = 3207F45826C494E300D90D50 /* HTTPS Responses.app */;
 			productType = "com.apple.product-type.application";
 		};
-		3207F46826C494E500D90D50 /* S ResponsesTests */ = {
+		3207F46826C494E500D90D50 /* HTTPS ResponsesTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3207F48026C494E500D90D50 /* Build configuration list for PBXNativeTarget "S ResponsesTests" */;
+			buildConfigurationList = 3207F48026C494E500D90D50 /* Build configuration list for PBXNativeTarget "HTTPS ResponsesTests" */;
 			buildPhases = (
 				3207F46526C494E500D90D50 /* Sources */,
 				3207F46626C494E500D90D50 /* Frameworks */,
@@ -314,14 +314,14 @@
 			dependencies = (
 				3207F46B26C494E500D90D50 /* PBXTargetDependency */,
 			);
-			name = "S ResponsesTests";
+			name = "HTTPS ResponsesTests";
 			productName = "S ResponsesTests";
-			productReference = 3207F46926C494E500D90D50 /* S ResponsesTests.xctest */;
+			productReference = 3207F46926C494E500D90D50 /* HTTPS ResponsesTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		3207F47326C494E500D90D50 /* S ResponsesUITests */ = {
+		3207F47326C494E500D90D50 /* HTTPS ResponsesUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3207F48326C494E500D90D50 /* Build configuration list for PBXNativeTarget "S ResponsesUITests" */;
+			buildConfigurationList = 3207F48326C494E500D90D50 /* Build configuration list for PBXNativeTarget "HTTPS ResponsesUITests" */;
 			buildPhases = (
 				3207F47026C494E500D90D50 /* Sources */,
 				3207F47126C494E500D90D50 /* Frameworks */,
@@ -332,9 +332,9 @@
 			dependencies = (
 				3207F47626C494E500D90D50 /* PBXTargetDependency */,
 			);
-			name = "S ResponsesUITests";
+			name = "HTTPS ResponsesUITests";
 			productName = "S ResponsesUITests";
-			productReference = 3207F47426C494E500D90D50 /* S ResponsesUITests.xctest */;
+			productReference = 3207F47426C494E500D90D50 /* HTTPS ResponsesUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 		329CC19526CF71B40056CE4D /* OneSignalNotificationServiceExtension */ = {
@@ -381,7 +381,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3207F45326C494E300D90D50 /* Build configuration list for PBXProject "S Responses" */;
+			buildConfigurationList = 3207F45326C494E300D90D50 /* Build configuration list for PBXProject "HTTPS Responses" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -400,9 +400,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3207F45726C494E300D90D50 /* S Responses */,
-				3207F46826C494E500D90D50 /* S ResponsesTests */,
-				3207F47326C494E500D90D50 /* S ResponsesUITests */,
+				3207F45726C494E300D90D50 /* HTTPS Responses */,
+				3207F46826C494E500D90D50 /* HTTPS ResponsesTests */,
+				3207F47326C494E500D90D50 /* HTTPS ResponsesUITests */,
 				329CC19526CF71B40056CE4D /* OneSignalNotificationServiceExtension */,
 			);
 		};
@@ -493,12 +493,12 @@
 /* Begin PBXTargetDependency section */
 		3207F46B26C494E500D90D50 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3207F45726C494E300D90D50 /* S Responses */;
+			target = 3207F45726C494E300D90D50 /* HTTPS Responses */;
 			targetProxy = 3207F46A26C494E500D90D50 /* PBXContainerItemProxy */;
 		};
 		3207F47626C494E500D90D50 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3207F45726C494E300D90D50 /* S Responses */;
+			target = 3207F45726C494E300D90D50 /* HTTPS Responses */;
 			targetProxy = 3207F47526C494E500D90D50 /* PBXContainerItemProxy */;
 		};
 		329CC19C26CF71B40056CE4D /* PBXTargetDependency */ = {
@@ -693,7 +693,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/S Responses.app/S Responses";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HTTPS Responses.app/HTTPS Responses";
 			};
 			name = Debug;
 		};
@@ -715,7 +715,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/S Responses.app/S Responses";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HTTPS Responses.app/HTTPS Responses";
 			};
 			name = Release;
 		};
@@ -806,7 +806,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3207F45326C494E300D90D50 /* Build configuration list for PBXProject "S Responses" */ = {
+		3207F45326C494E300D90D50 /* Build configuration list for PBXProject "HTTPS Responses" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3207F47B26C494E500D90D50 /* Debug */,
@@ -815,7 +815,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3207F47D26C494E500D90D50 /* Build configuration list for PBXNativeTarget "S Responses" */ = {
+		3207F47D26C494E500D90D50 /* Build configuration list for PBXNativeTarget "HTTPS Responses" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3207F47E26C494E500D90D50 /* Debug */,
@@ -824,7 +824,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3207F48026C494E500D90D50 /* Build configuration list for PBXNativeTarget "S ResponsesTests" */ = {
+		3207F48026C494E500D90D50 /* Build configuration list for PBXNativeTarget "HTTPS ResponsesTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3207F48126C494E500D90D50 /* Debug */,
@@ -833,7 +833,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3207F48326C494E500D90D50 /* Build configuration list for PBXNativeTarget "S ResponsesUITests" */ = {
+		3207F48326C494E500D90D50 /* Build configuration list for PBXNativeTarget "HTTPS ResponsesUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3207F48426C494E500D90D50 /* Debug */,
