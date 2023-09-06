@@ -3,35 +3,21 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 53;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		3207F45C26C494E300D90D50 /* S_ResponsesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3207F45B26C494E300D90D50 /* S_ResponsesApp.swift */; };
-		3207F45E26C494E300D90D50 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3207F45D26C494E300D90D50 /* SettingsView.swift */; };
 		3207F46026C494E500D90D50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3207F45F26C494E500D90D50 /* Assets.xcassets */; };
 		3207F46326C494E500D90D50 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3207F46226C494E500D90D50 /* Preview Assets.xcassets */; };
 		3207F46E26C494E500D90D50 /* S_ResponsesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3207F46D26C494E500D90D50 /* S_ResponsesTests.swift */; };
 		3207F47926C494E500D90D50 /* S_ResponsesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3207F47826C494E500D90D50 /* S_ResponsesUITests.swift */; };
-		3207F48826C4957600D90D50 /* Variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3207F48726C4957600D90D50 /* Variables.swift */; };
-		3207F48A26C4A88A00D90D50 /* ResponseCodeDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3207F48926C4A88A00D90D50 /* ResponseCodeDetails.swift */; };
-		320B332F26DC48940035CFE8 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320B332E26DC48940035CFE8 /* LoadingView.swift */; };
-		3243B69A26C5DB910084E1B6 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3243B69926C5DB910084E1B6 /* DetailView.swift */; };
-		3243B69C26C5DBCA0084E1B6 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3243B69B26C5DBCA0084E1B6 /* ListView.swift */; };
-		324E1F1826CB8C9700EB9E07 /* SwiftUIX in Frameworks */ = {isa = PBXBuildFile; productRef = 324E1F1726CB8C9700EB9E07 /* SwiftUIX */; };
-		324E1F1D26CB991200EB9E07 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324E1F1C26CB991100EB9E07 /* HomeView.swift */; };
-		324E1F1F26CB9B5F00EB9E07 /* bahnschrift.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 324E1F1E26CB9B5E00EB9E07 /* bahnschrift.ttf */; };
-		325815C426D3A54D007FE10F /* ExperimentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325815C326D3A54D007FE10F /* ExperimentView.swift */; };
-		325F4FC126D36664002877AA /* OneSignal in Frameworks */ = {isa = PBXBuildFile; productRef = 325F4FC026D36664002877AA /* OneSignal */; };
-		325F4FC626D391EF002877AA /* SwiftUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = 325F4FC526D391EF002877AA /* SwiftUIKit */; };
-		326334B826E58B9700C4BCBD /* Sentry in Frameworks */ = {isa = PBXBuildFile; productRef = 326334B726E58B9700C4BCBD /* Sentry */; };
-		3275173F26D897240034EEE2 /* GlossaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3275173E26D897240034EEE2 /* GlossaryView.swift */; };
-		329CC19926CF71B40056CE4D /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329CC19826CF71B40056CE4D /* NotificationService.swift */; };
-		329CC19D26CF71B40056CE4D /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 329CC19626CF71B40056CE4D /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		329CC1A826CF73530056CE4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329CC1A726CF73530056CE4D /* AppDelegate.swift */; };
-		32B534F126D4DB7A009B4FFF /* NavigationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B534F026D4DB7A009B4FFF /* NavigationHelper.swift */; };
-		32B534F326D4DBDA009B4FFF /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B534F226D4DBDA009B4FFF /* ViewRouter.swift */; };
-		32B534F526D4DC08009B4FFF /* MotherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B534F426D4DC08009B4FFF /* MotherView.swift */; };
+		32A19B7D2AA7E9DA000433A8 /* ResponsesEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A19B7C2AA7E9DA000433A8 /* ResponsesEnum.swift */; };
+		32A19B7F2AA7F746000433A8 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A19B7E2AA7F746000433A8 /* MainView.swift */; };
+		32A19B812AA7FC0B000433A8 /* SubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A19B802AA7FC0B000433A8 /* SubView.swift */; };
+		32A19B832AA7FEB2000433A8 /* GlossaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A19B822AA7FEB2000433A8 /* GlossaryView.swift */; };
+		32A19B842AA85E8A000433A8 /* ResponsesEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A19B7C2AA7E9DA000433A8 /* ResponsesEnum.swift */; };
+		32A19B862AA85FDD000433A8 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A19B852AA85FDD000433A8 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,13 +35,6 @@
 			remoteGlobalIDString = 3207F45726C494E300D90D50;
 			remoteInfo = "S Responses";
 		};
-		329CC19B26CF71B40056CE4D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3207F45026C494E300D90D50 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 329CC19526CF71B40056CE4D;
-			remoteInfo = OneSignalNotificationServiceExtension;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -65,7 +44,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				329CC19D26CF71B40056CE4D /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -75,7 +53,6 @@
 /* Begin PBXFileReference section */
 		3207F45826C494E300D90D50 /* HTTPS Responses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HTTPS Responses.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3207F45B26C494E300D90D50 /* S_ResponsesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S_ResponsesApp.swift; sourceTree = "<group>"; };
-		3207F45D26C494E300D90D50 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		3207F45F26C494E500D90D50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3207F46226C494E500D90D50 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3207F46426C494E500D90D50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -85,24 +62,15 @@
 		3207F47426C494E500D90D50 /* HTTPS ResponsesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HTTPS ResponsesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3207F47826C494E500D90D50 /* S_ResponsesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S_ResponsesUITests.swift; sourceTree = "<group>"; };
 		3207F47A26C494E500D90D50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3207F48726C4957600D90D50 /* Variables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Variables.swift; sourceTree = "<group>"; };
-		3207F48926C4A88A00D90D50 /* ResponseCodeDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseCodeDetails.swift; sourceTree = "<group>"; };
-		320B332E26DC48940035CFE8 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
-		3243B69926C5DB910084E1B6 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
-		3243B69B26C5DBCA0084E1B6 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
-		324E1F1C26CB991100EB9E07 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		324E1F1E26CB9B5E00EB9E07 /* bahnschrift.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = bahnschrift.ttf; sourceTree = "<group>"; };
-		325815C326D3A54D007FE10F /* ExperimentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperimentView.swift; sourceTree = "<group>"; };
-		3275173E26D897240034EEE2 /* GlossaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlossaryView.swift; sourceTree = "<group>"; };
 		329CC19126CF6DF20056CE4D /* S Responses.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "S Responses.entitlements"; sourceTree = "<group>"; };
-		329CC19626CF71B40056CE4D /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		329CC19826CF71B40056CE4D /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		329CC19A26CF71B40056CE4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		329CC1A726CF73530056CE4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		329CC1A926CF74B60056CE4D /* OneSignalNotificationServiceExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OneSignalNotificationServiceExtension.entitlements; sourceTree = "<group>"; };
-		32B534F026D4DB7A009B4FFF /* NavigationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationHelper.swift; sourceTree = "<group>"; };
-		32B534F226D4DBDA009B4FFF /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
-		32B534F426D4DC08009B4FFF /* MotherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotherView.swift; sourceTree = "<group>"; };
+		32A19B7C2AA7E9DA000433A8 /* ResponsesEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponsesEnum.swift; sourceTree = "<group>"; };
+		32A19B7E2AA7F746000433A8 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		32A19B802AA7FC0B000433A8 /* SubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubView.swift; sourceTree = "<group>"; };
+		32A19B822AA7FEB2000433A8 /* GlossaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlossaryView.swift; sourceTree = "<group>"; };
+		32A19B852AA85FDD000433A8 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,10 +78,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				324E1F1826CB8C9700EB9E07 /* SwiftUIX in Frameworks */,
-				325F4FC626D391EF002877AA /* SwiftUIKit in Frameworks */,
-				325F4FC126D36664002877AA /* OneSignal in Frameworks */,
-				326334B826E58B9700C4BCBD /* Sentry in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,13 +89,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		3207F47126C494E500D90D50 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		329CC19326CF71B40056CE4D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -159,7 +116,6 @@
 				3207F45826C494E300D90D50 /* HTTPS Responses.app */,
 				3207F46926C494E500D90D50 /* HTTPS ResponsesTests.xctest */,
 				3207F47426C494E500D90D50 /* HTTPS ResponsesUITests.xctest */,
-				329CC19626CF71B40056CE4D /* OneSignalNotificationServiceExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -169,11 +125,10 @@
 			children = (
 				329CC19126CF6DF20056CE4D /* S Responses.entitlements */,
 				3207F45B26C494E300D90D50 /* S_ResponsesApp.swift */,
-				3243B69D26C5DC990084E1B6 /* UIViews */,
+				32A19B7B2AA7E99E000433A8 /* Helpers */,
+				32A19B7A2AA7E98B000433A8 /* Views */,
 				3207F45F26C494E500D90D50 /* Assets.xcassets */,
 				3207F46426C494E500D90D50 /* Info.plist */,
-				324E1F2026CB9B7100EB9E07 /* Fonts */,
-				3207F48626C4955E00D90D50 /* Helpers */,
 				3207F46126C494E500D90D50 /* Preview Content */,
 			);
 			path = "S Responses";
@@ -205,45 +160,11 @@
 			path = "S ResponsesUITests";
 			sourceTree = "<group>";
 		};
-		3207F48626C4955E00D90D50 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				329D398426DF697F00266CB9 /* Notifications */,
-				329D398326DF696500266CB9 /* Navigation */,
-				3207F48726C4957600D90D50 /* Variables.swift */,
-				3207F48926C4A88A00D90D50 /* ResponseCodeDetails.swift */,
-			);
-			path = Helpers;
-			sourceTree = "<group>";
-		};
-		3243B69D26C5DC990084E1B6 /* UIViews */ = {
-			isa = PBXGroup;
-			children = (
-				32B534F426D4DC08009B4FFF /* MotherView.swift */,
-				324E1F1C26CB991100EB9E07 /* HomeView.swift */,
-				3243B69926C5DB910084E1B6 /* DetailView.swift */,
-				3207F45D26C494E300D90D50 /* SettingsView.swift */,
-				320B332E26DC48940035CFE8 /* LoadingView.swift */,
-				3243B69B26C5DBCA0084E1B6 /* ListView.swift */,
-				3275173E26D897240034EEE2 /* GlossaryView.swift */,
-				325815C326D3A54D007FE10F /* ExperimentView.swift */,
-			);
-			path = UIViews;
-			sourceTree = "<group>";
-		};
 		324E1F1926CB8EFC00EB9E07 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		324E1F2026CB9B7100EB9E07 /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				324E1F1E26CB9B5E00EB9E07 /* bahnschrift.ttf */,
-			);
-			path = Fonts;
 			sourceTree = "<group>";
 		};
 		329CC19726CF71B40056CE4D /* OneSignalNotificationServiceExtension */ = {
@@ -256,21 +177,24 @@
 			path = OneSignalNotificationServiceExtension;
 			sourceTree = "<group>";
 		};
-		329D398326DF696500266CB9 /* Navigation */ = {
+		32A19B7A2AA7E98B000433A8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				32B534F026D4DB7A009B4FFF /* NavigationHelper.swift */,
-				32B534F226D4DBDA009B4FFF /* ViewRouter.swift */,
+				32A19B7E2AA7F746000433A8 /* MainView.swift */,
+				32A19B802AA7FC0B000433A8 /* SubView.swift */,
+				32A19B822AA7FEB2000433A8 /* GlossaryView.swift */,
+				32A19B852AA85FDD000433A8 /* SettingsView.swift */,
 			);
-			path = Navigation;
+			path = Views;
 			sourceTree = "<group>";
 		};
-		329D398426DF697F00266CB9 /* Notifications */ = {
+		32A19B7B2AA7E99E000433A8 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				329CC1A726CF73530056CE4D /* AppDelegate.swift */,
+				32A19B7C2AA7E9DA000433A8 /* ResponsesEnum.swift */,
 			);
-			path = Notifications;
+			name = Helpers;
+			path = Views/Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,14 +212,9 @@
 			buildRules = (
 			);
 			dependencies = (
-				329CC19C26CF71B40056CE4D /* PBXTargetDependency */,
 			);
 			name = "HTTPS Responses";
 			packageProductDependencies = (
-				324E1F1726CB8C9700EB9E07 /* SwiftUIX */,
-				325F4FC026D36664002877AA /* OneSignal */,
-				325F4FC526D391EF002877AA /* SwiftUIKit */,
-				326334B726E58B9700C4BCBD /* Sentry */,
 			);
 			productName = "S Responses";
 			productReference = 3207F45826C494E300D90D50 /* HTTPS Responses.app */;
@@ -337,25 +256,6 @@
 			productReference = 3207F47426C494E500D90D50 /* HTTPS ResponsesUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		329CC19526CF71B40056CE4D /* OneSignalNotificationServiceExtension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 329CC19E26CF71B40056CE4D /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
-			buildPhases = (
-				329CC19226CF71B40056CE4D /* Sources */,
-				329CC19326CF71B40056CE4D /* Frameworks */,
-				329CC19426CF71B40056CE4D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = OneSignalNotificationServiceExtension;
-			packageProductDependencies = (
-			);
-			productName = OneSignalNotificationServiceExtension;
-			productReference = 329CC19626CF71B40056CE4D /* OneSignalNotificationServiceExtension.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -364,7 +264,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1250;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					3207F45726C494E300D90D50 = {
 						CreatedOnToolsVersion = 12.5.1;
@@ -376,9 +276,6 @@
 					3207F47326C494E500D90D50 = {
 						CreatedOnToolsVersion = 12.5.1;
 						TestTargetID = 3207F45726C494E300D90D50;
-					};
-					329CC19526CF71B40056CE4D = {
-						CreatedOnToolsVersion = 12.5.1;
 					};
 				};
 			};
@@ -392,10 +289,6 @@
 			);
 			mainGroup = 3207F44F26C494E300D90D50;
 			packageReferences = (
-				324E1F1626CB8C9700EB9E07 /* XCRemoteSwiftPackageReference "SwiftUIX" */,
-				329CC1A226CF725F0056CE4D /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */,
-				325F4FC426D391EF002877AA /* XCRemoteSwiftPackageReference "SwiftUIKit" */,
-				326334B626E58B9700C4BCBD /* XCRemoteSwiftPackageReference "sentry-cocoa" */,
 			);
 			productRefGroup = 3207F45926C494E300D90D50 /* Products */;
 			projectDirPath = "";
@@ -404,7 +297,6 @@
 				3207F45726C494E300D90D50 /* HTTPS Responses */,
 				3207F46826C494E500D90D50 /* HTTPS ResponsesTests */,
 				3207F47326C494E500D90D50 /* HTTPS ResponsesUITests */,
-				329CC19526CF71B40056CE4D /* OneSignalNotificationServiceExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -414,7 +306,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				324E1F1F26CB9B5F00EB9E07 /* bahnschrift.ttf in Resources */,
 				3207F46326C494E500D90D50 /* Preview Assets.xcassets in Resources */,
 				3207F46026C494E500D90D50 /* Assets.xcassets in Resources */,
 			);
@@ -434,13 +325,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		329CC19426CF71B40056CE4D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -448,20 +332,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3207F48A26C4A88A00D90D50 /* ResponseCodeDetails.swift in Sources */,
-				3207F48826C4957600D90D50 /* Variables.swift in Sources */,
-				3243B69A26C5DB910084E1B6 /* DetailView.swift in Sources */,
-				32B534F326D4DBDA009B4FFF /* ViewRouter.swift in Sources */,
-				32B534F526D4DC08009B4FFF /* MotherView.swift in Sources */,
-				329CC1A826CF73530056CE4D /* AppDelegate.swift in Sources */,
-				325815C426D3A54D007FE10F /* ExperimentView.swift in Sources */,
-				3207F45E26C494E300D90D50 /* SettingsView.swift in Sources */,
-				320B332F26DC48940035CFE8 /* LoadingView.swift in Sources */,
-				3243B69C26C5DBCA0084E1B6 /* ListView.swift in Sources */,
-				32B534F126D4DB7A009B4FFF /* NavigationHelper.swift in Sources */,
-				324E1F1D26CB991200EB9E07 /* HomeView.swift in Sources */,
-				3275173F26D897240034EEE2 /* GlossaryView.swift in Sources */,
+				32A19B812AA7FC0B000433A8 /* SubView.swift in Sources */,
+				32A19B7D2AA7E9DA000433A8 /* ResponsesEnum.swift in Sources */,
+				32A19B862AA85FDD000433A8 /* SettingsView.swift in Sources */,
+				32A19B7F2AA7F746000433A8 /* MainView.swift in Sources */,
 				3207F45C26C494E300D90D50 /* S_ResponsesApp.swift in Sources */,
+				32A19B832AA7FEB2000433A8 /* GlossaryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,6 +346,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3207F46E26C494E500D90D50 /* S_ResponsesTests.swift in Sources */,
+				32A19B842AA85E8A000433A8 /* ResponsesEnum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,14 +355,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3207F47926C494E500D90D50 /* S_ResponsesUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		329CC19226CF71B40056CE4D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				329CC19926CF71B40056CE4D /* NotificationService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,11 +370,6 @@
 			isa = PBXTargetDependency;
 			target = 3207F45726C494E300D90D50 /* HTTPS Responses */;
 			targetProxy = 3207F47526C494E500D90D50 /* PBXContainerItemProxy */;
-		};
-		329CC19C26CF71B40056CE4D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 329CC19526CF71B40056CE4D /* OneSignalNotificationServiceExtension */;
-			targetProxy = 329CC19B26CF71B40056CE4D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -547,6 +411,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -608,6 +473,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -634,17 +500,18 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "S Responses/S Responses.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_ASSET_PATHS = "\"S Responses/Preview Content\"";
-				DEVELOPMENT_TEAM = 98JA788VTC;
+				DEVELOPMENT_TEAM = G9WS4QC5DH;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "S Responses/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				INFOPLIST_KEY_CFBundleDisplayName = HTTPS;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sebhunterluke.HTTPS-Responses";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.person2099.HTTP-S-Responses";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -659,17 +526,18 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "S Responses/S Responses.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_ASSET_PATHS = "\"S Responses/Preview Content\"";
-				DEVELOPMENT_TEAM = 98JA788VTC;
+				DEVELOPMENT_TEAM = G9WS4QC5DH;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "S Responses/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				INFOPLIST_KEY_CFBundleDisplayName = HTTPS;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sebhunterluke.HTTPS-Responses";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.person2099.HTTP-S-Responses";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -682,7 +550,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 98JA788VTC;
+				DEVELOPMENT_TEAM = G9WS4QC5DH;
 				INFOPLIST_FILE = "S ResponsesTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -690,7 +558,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sebhunterluke.S-ResponsesTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.person2099.HTTP-S-ResponsesTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -704,7 +572,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 98JA788VTC;
+				DEVELOPMENT_TEAM = G9WS4QC5DH;
 				INFOPLIST_FILE = "S ResponsesTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -712,7 +580,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sebhunterluke.S-ResponsesTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.person2099.HTTP-S-ResponsesTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -725,14 +593,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 98JA788VTC;
+				DEVELOPMENT_TEAM = G9WS4QC5DH;
 				INFOPLIST_FILE = "S ResponsesUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sebhunterluke.S-ResponsesUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.person2099.HTTP-S-ResponsesUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -745,62 +613,18 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 98JA788VTC;
+				DEVELOPMENT_TEAM = G9WS4QC5DH;
 				INFOPLIST_FILE = "S ResponsesUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sebhunterluke.S-ResponsesUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.person2099.HTTP-S-ResponsesUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "S Responses";
-			};
-			name = Release;
-		};
-		329CC19F26CF71B40056CE4D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 9;
-				DEVELOPMENT_TEAM = 98JA788VTC;
-				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sebhunterluke.HTTPS-Responses.OneSignalNotificationServiceExtension";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		329CC1A026CF71B40056CE4D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 9;
-				DEVELOPMENT_TEAM = 98JA788VTC;
-				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sebhunterluke.HTTPS-Responses.OneSignalNotificationServiceExtension";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -843,74 +667,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		329CC19E26CF71B40056CE4D /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				329CC19F26CF71B40056CE4D /* Debug */,
-				329CC1A026CF71B40056CE4D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		324E1F1626CB8C9700EB9E07 /* XCRemoteSwiftPackageReference "SwiftUIX" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SwiftUIX/SwiftUIX.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.0.8;
-			};
-		};
-		325F4FC426D391EF002877AA /* XCRemoteSwiftPackageReference "SwiftUIKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/danielsaidi/SwiftUIKit.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.7.2;
-			};
-		};
-		326334B626E58B9700C4BCBD /* XCRemoteSwiftPackageReference "sentry-cocoa" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/getsentry/sentry-cocoa.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 7.2.7;
-			};
-		};
-		329CC1A226CF725F0056CE4D /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/OneSignal/OneSignal-XCFramework";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 3.6.1;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		324E1F1726CB8C9700EB9E07 /* SwiftUIX */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 324E1F1626CB8C9700EB9E07 /* XCRemoteSwiftPackageReference "SwiftUIX" */;
-			productName = SwiftUIX;
-		};
-		325F4FC026D36664002877AA /* OneSignal */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 329CC1A226CF725F0056CE4D /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */;
-			productName = OneSignal;
-		};
-		325F4FC526D391EF002877AA /* SwiftUIKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 325F4FC426D391EF002877AA /* XCRemoteSwiftPackageReference "SwiftUIKit" */;
-			productName = SwiftUIKit;
-		};
-		326334B726E58B9700C4BCBD /* Sentry */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 326334B626E58B9700C4BCBD /* XCRemoteSwiftPackageReference "sentry-cocoa" */;
-			productName = Sentry;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3207F45026C494E300D90D50 /* Project object */;
 }

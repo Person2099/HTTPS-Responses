@@ -19,6 +19,11 @@ class S_ResponsesTests: XCTestCase {
     }
 
     func testExample() throws {
+        var doubleDef: Bool = false
+        for response in ResponsesEnum.allCases {
+            doubleDef = response.detailedDef == response.simplifiedDef
+        }
+        XCTAssert(!doubleDef)
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
